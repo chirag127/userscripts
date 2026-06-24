@@ -1,0 +1,37 @@
+# userscripts
+
+Personal userscripts collection by [@chirag127](https://github.com/chirag127). Tampermonkey / ScriptCat / Violentmonkey compatible.
+
+## Install
+
+Click the **install** link next to any userscript below. Tampermonkey or ScriptCat will prompt to install + auto-update from this repo.
+
+| Userscript | Site | What it does | Install |
+|---|---|---|---|
+| **dearrow-show-original** | youtube.com | Append the original YouTube title in parentheses after DeArrow's replacement: `Better Title (original: 10 SHOCKING Things You WON'T BELIEVE!!!)` | [install](https://github.com/chirag127/userscripts/raw/main/dearrow-show-original/dearrow-show-original.user.js) |
+
+## Layout
+
+```
+userscripts/
+├── <name>/
+│   ├── <name>.user.js   # the userscript (Tampermonkey metadata header at the top)
+│   └── README.md        # what it does, screenshots, install URL
+├── README.md            # this file (auto-generated index)
+└── LICENSE              # MIT
+```
+
+One folder per userscript. Each ships as a single `.user.js` file. The metadata block uses `@updateURL` + `@downloadURL` pointing at the GitHub raw URL so Tampermonkey auto-updates on every push.
+
+## Manager compatibility
+
+| Manager | Tested | Notes |
+|---|---|---|
+| Tampermonkey (Chrome / Firefox / Edge) | ✅ | The default. |
+| Violentmonkey (Chrome / Firefox) | ✅ | Same metadata block. |
+| ScriptCat | ✅ | Adds `@background`, `@crontab`, `==UserConfig==` extensions if a userscript opts in. |
+| Greasemonkey (Firefox-only legacy) | ⚠️ | Some `GM_*` APIs deprecated; modern userscripts use `GM.` namespace. |
+
+## License
+
+MIT.
