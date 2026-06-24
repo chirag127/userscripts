@@ -9,7 +9,7 @@ Better Title (original: 10 SHOCKING Things You WON'T BELIEVE!!!)
 ## Install
 
 1. Install a userscript manager: [Tampermonkey](https://www.tampermonkey.net/), [Violentmonkey](https://violentmonkey.github.io/), or [ScriptCat](https://scriptcat.org/).
-2. Click → **[install](https://github.com/chirag127/userscripts/raw/main/dearrow-show-original/dearrow-show-original.user.js)**
+2. Click → **[install](https://github.com/oriz-org/userscripts/raw/main/dearrow-show-original/dearrow-show-original.user.js)**
 3. Make sure the [DeArrow extension](https://chrome.google.com/webstore/detail/dearrow-better-titles-and/enamippconapkdmgfgjchkhakpfinmaj) is also installed — this userscript piggybacks on it.
 
 ## How it works

@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         DeArrow: show original title
-// @namespace    https://github.com/chirag127/userscripts
+// @namespace    https://github.com/oriz-org/userscripts
 // @version      0.1.0
 // @description  Append the original YouTube title in parentheses after DeArrow's replacement. Requires the DeArrow extension installed.
 // @author       Chirag Singhal
@@ -9,10 +9,10 @@
 // @run-at       document-start
 // @grant        none
 // @license      MIT
-// @homepageURL  https://github.com/chirag127/userscripts/tree/main/dearrow-show-original
-// @supportURL   https://github.com/chirag127/userscripts/issues
-// @updateURL    https://github.com/chirag127/userscripts/raw/main/dearrow-show-original/dearrow-show-original.user.js
-// @downloadURL  https://github.com/chirag127/userscripts/raw/main/dearrow-show-original/dearrow-show-original.user.js
+// @homepageURL  https://github.com/oriz-org/userscripts/tree/main/dearrow-show-original
+// @supportURL   https://github.com/oriz-org/userscripts/issues
+// @updateURL    https://github.com/oriz-org/userscripts/raw/main/dearrow-show-original/dearrow-show-original.user.js
+// @downloadURL  https://github.com/oriz-org/userscripts/raw/main/dearrow-show-original/dearrow-show-original.user.js
 // ==/UserScript==
 
 (() => {
