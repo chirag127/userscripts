@@ -12,6 +12,7 @@ Click the **install** link next to any userscript below. Tampermonkey or ScriptC
 | **dearrow-show-original** | youtube.com | Append the original YouTube title in parentheses after DeArrow's replacement: `Better Title (original: 10 SHOCKING Things You WON'T BELIEVE!!!)` | [install](https://github.com/oriz-org/userscripts/raw/main/dearrow-show-original/dearrow-show-original.user.js) |
 | **open-links-in-selection** | any page | Open every link found in the current selection (anchors + plain-text URLs). Triggered via the Tampermonkey extension menu. Confirms before opening ≥ 5 tabs. | [install](https://github.com/oriz-org/userscripts/raw/main/open-links-in-selection/open-links-in-selection.user.js) |
 | **copy-email-links** | any page | Click any `mailto:` link → email address copied to clipboard instead of opening OS mail client. Toast confirms. Replaces the closed-source "Copy email links" Chrome extension. | [install](https://github.com/oriz-org/userscripts/raw/main/copy-email-links/copy-email-links.user.js) |
+| **copy-highlighted-links** | any page | Copy URLs of every link in the current selection to the clipboard, one per line. Catches `<a href>` AND plain-text URLs. Replaces the "Copy Highlighted Links" Chrome extension. | [install](https://github.com/oriz-org/userscripts/raw/main/copy-highlighted-links/copy-highlighted-links.user.js) |
 
 ## Layout
 
