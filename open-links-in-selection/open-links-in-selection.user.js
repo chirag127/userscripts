@@ -3,7 +3,7 @@
 // @namespace    https://github.com/oriz-org/userscripts
 // @version      0.1.0
 // @description  Tampermonkey menu command — opens every link found in the current text selection in new tabs. Catches both <a href> elements AND plain-text URLs (http://, https://, www.).
-// @author       Chirag Singhal
+// @author       chirag127
 // @match        *://*/*
 // @run-at       document-end
 // @grant        GM_registerMenuCommand

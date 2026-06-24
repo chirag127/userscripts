@@ -3,7 +3,7 @@
 // @namespace    https://github.com/oriz-org/userscripts
 // @version      0.1.0
 // @description  Append the original YouTube title in parentheses after DeArrow's replacement. Requires the DeArrow extension installed.
-// @author       Chirag Singhal
+// @author       chirag127
 // @match        https://www.youtube.com/*
 // @match        https://m.youtube.com/*
 // @run-at       document-start

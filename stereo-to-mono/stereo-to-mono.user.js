@@ -3,7 +3,7 @@
 // @namespace    https://github.com/oriz-org/userscripts
 // @version      1.0
 // @description  Convert stereo audio to mono on any page. Auto-detects playing <video> and <audio> elements. Toggle via Tampermonkey menu.
-// @author       Chirag Singhal
+// @author       chirag127
 // @match        *://*/*
 // @exclude      https://www.youtube.com/embed/*
 // @grant        GM_registerMenuCommand

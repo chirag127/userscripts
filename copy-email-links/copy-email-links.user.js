@@ -3,7 +3,7 @@
 // @namespace    https://github.com/oriz-org/userscripts
 // @version      0.1.0
 // @description  When you click a mailto: link, copy the email address to your clipboard instead of opening the OS mail client. Toast confirms the copy. Replaces the closed-source "Copy email links" Chrome extension (ocffkcplakjlhbaadfcokiiflaelnaib).
-// @author       Chirag Singhal
+// @author       chirag127
 // @match        *://*/*
 // @run-at       document-end
 // @grant        GM_registerMenuCommand
