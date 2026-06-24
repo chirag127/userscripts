@@ -8,6 +8,7 @@ Click the **install** link next to any userscript below. Tampermonkey or ScriptC
 
 | Userscript | Site | What it does | Install |
 |---|---|---|---|
+| **stereo-to-mono** | any page | Convert stereo audio to mono on any `<video>`/`<audio>` element. Toggle via Tampermonkey menu. Auto-detects playing media. | [install](https://github.com/oriz-org/userscripts/raw/main/stereo-to-mono/stereo-to-mono.user.js) |
 | **dearrow-show-original** | youtube.com | Append the original YouTube title in parentheses after DeArrow's replacement: `Better Title (original: 10 SHOCKING Things You WON'T BELIEVE!!!)` | [install](https://github.com/oriz-org/userscripts/raw/main/dearrow-show-original/dearrow-show-original.user.js) |
 | **open-links-in-selection** | any page | Open every link found in the current selection (anchors + plain-text URLs). Triggered via the Tampermonkey extension menu. Confirms before opening ≥ 5 tabs. | [install](https://github.com/oriz-org/userscripts/raw/main/open-links-in-selection/open-links-in-selection.user.js) |
 
