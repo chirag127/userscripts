@@ -13,6 +13,7 @@ Click the **install** link next to any userscript below. Tampermonkey or ScriptC
 | **open-links-in-selection** | any page | Open every link found in the current selection (anchors + plain-text URLs). Triggered via the Tampermonkey extension menu. Confirms before opening ≥ 5 tabs. | [install](https://github.com/oriz-org/userscripts/raw/main/open-links-in-selection/open-links-in-selection.user.js) |
 | **copy-email-links** | any page | Click any `mailto:` link → email address copied to clipboard instead of opening OS mail client. Toast confirms. Replaces the closed-source "Copy email links" Chrome extension. | [install](https://github.com/oriz-org/userscripts/raw/main/copy-email-links/copy-email-links.user.js) |
 | **copy-highlighted-links** | any page | Copy URLs of every link in the current selection to the clipboard, one per line. Catches `<a href>` AND plain-text URLs. Replaces the "Copy Highlighted Links" Chrome extension. | [install](https://github.com/oriz-org/userscripts/raw/main/copy-highlighted-links/copy-highlighted-links.user.js) |
+| **link-klipper** | any page | Extract every link on the page → download as CSV or copy URLs to clipboard. `Ctrl+Shift+K` hotkey. Captures `<a href>` + `<img src>`. Replaces the "Link Klipper" Chrome extension (no hover-pick mode). | [install](https://github.com/oriz-org/userscripts/raw/main/link-klipper/link-klipper.user.js) |
 
 ## Layout
 
