@@ -6,6 +6,11 @@ Userscript that **appends the original YouTube title** in parentheses after DeAr
 Better Title (original: 10 SHOCKING Things You WON'T BELIEVE!!!)
 ```
 
+Works on:
+
+- The **watch page** H1 title
+- **Every thumbnail** on home, subscriptions, sidebar (Up Next), search results, channel pages, shelves — anywhere YouTube renders a video card.
+
 ## Install
 
 1. Install a userscript manager: [Tampermonkey](https://www.tampermonkey.net/), [Violentmonkey](https://violentmonkey.github.io/), or [ScriptCat](https://scriptcat.org/).
@@ -14,13 +19,20 @@ Better Title (original: 10 SHOCKING Things You WON'T BELIEVE!!!)
 
 ## How it works
 
-On every YouTube video page:
+Two layers, both DOM-only, zero network calls.
 
-1. Snapshot the title element as soon as the page loads (this is the original YouTube title, before DeArrow has had a chance to swap it).
-2. Watch the title element with a `MutationObserver`.
-3. When DeArrow replaces the text, append ` (original: <snapshot>)`.
+**Watch page (H1):** Snapshot the title element as soon as the page loads, watch with a `MutationObserver`, append ` (original: <snapshot>)` whenever DeArrow swaps the text. Falls back to `document.title` for tiebreaking.
 
-Zero new API calls — the original is read from the DOM that's already there.
+**Thumbnail cards:** A global `MutationObserver` rooted at `document.body` (started at `document-start`) sees every title node the moment it's added or its text changes. On the first text we observe, we stash it as the candidate "original" via a `data-dearrow-original` attribute. When DeArrow replaces, we re-append the stored value as the suffix. If DeArrow gets there first the stored value already equals the displayed text and we no-op — no garbled output either way.
+
+Title selectors covered:
+
+- `#video-title` (rich-grid, compact-video, search, shelf cards)
+- `a#video-title-link` (sidebar variants)
+- `h3 a.yt-simple-endpoint` (legacy fallback)
+- `span.yt-core-attributed-string[role="text"]` (mobile / newer redesign)
+
+Infinite scroll, SPA navigations, and lazy-loaded sections (Shorts shelf, Trending) are all handled because the observer is page-global.
 
 ## Why not just use the DeArrow extension fork?
 
@@ -28,5 +40,6 @@ This userscript is **lower install friction** for sharing. The DeArrow extension
 
 ## Caveats
 
-- If DeArrow replaces the title **before** the userscript can snapshot it (rare — userscripts at `@run-at document-start` usually win), the "original" we capture may itself be the DeArrow-replaced title. The script falls back to `document.title` (which DeArrow updates later) as a tiebreaker.
-- Tested on `www.youtube.com` and `m.youtube.com`. Not tested on YouTube Music, embeds, or Shorts (Shorts use a different DOM tree).
+- If DeArrow replaces a thumbnail title **before** the userscript's observer fires, the stashed "original" is itself the DeArrow text. The script detects this (current text matches stored value) and no-ops, so you see the DeArrow title alone — no broken `(original: <dearrow>)` suffix.
+- Tested on `www.youtube.com` and `m.youtube.com`. Shorts use a different DOM tree (`span.yt-core-attributed-string`) and may decorate inconsistently.
+
