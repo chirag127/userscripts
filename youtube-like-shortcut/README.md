@@ -6,7 +6,7 @@ Does one thing only.
 
 ## Install
 
-[![Install](https://img.shields.io/badge/install-userscript-blue)](https://raw.githubusercontent.com/oriz-labs/userscripts/main/youtube-like-shortcut/youtube-like-shortcut.user.js)
+[![Install](https://img.shields.io/badge/install-userscript-blue)](https://raw.githubusercontent.com/chirag127/userscripts/main/youtube-like-shortcut/youtube-like-shortcut.user.js)
 
 Requires Tampermonkey, Violentmonkey, or Userscripts (Safari).
 
