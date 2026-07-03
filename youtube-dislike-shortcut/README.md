@@ -6,7 +6,7 @@ Does one thing only.
 
 ## Install
 
-[![Install](https://img.shields.io/badge/install-userscript-blue)](https://github.com/oriz-org/userscripts/raw/main/youtube-dislike-shortcut/youtube-dislike-shortcut.user.js)
+[![Install](https://img.shields.io/badge/install-userscript-blue)](https://raw.githubusercontent.com/chirag127/userscripts/main/youtube-dislike-shortcut/youtube-dislike-shortcut.user.js)
 
 Requires Tampermonkey, Violentmonkey, or Userscripts (Safari).
 

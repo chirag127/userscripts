@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Copy email links
-// @namespace    https://github.com/oriz-org/userscripts
-// @version      0.1.0
+// @namespace    https://github.com/chirag127/userscripts
+// @version      0.1.1
 // @description  When you click a mailto: link, copy the email address to your clipboard instead of opening the OS mail client. Toast confirms the copy. Replaces the closed-source "Copy email links" Chrome extension (ocffkcplakjlhbaadfcokiiflaelnaib).
 // @author       chirag127
 // @match        *://*/*
@@ -10,10 +10,10 @@
 // @grant        GM_getValue
 // @grant        GM_setValue
 // @license      MIT
-// @homepageURL  https://github.com/oriz-org/userscripts/tree/main/copy-email-links
-// @supportURL   https://github.com/oriz-org/userscripts/issues
-// @updateURL    https://github.com/oriz-org/userscripts/raw/main/copy-email-links/copy-email-links.user.js
-// @downloadURL  https://github.com/oriz-org/userscripts/raw/main/copy-email-links/copy-email-links.user.js
+// @homepageURL  https://github.com/chirag127/userscripts/tree/main/copy-email-links
+// @supportURL   https://github.com/chirag127/userscripts/issues
+// @updateURL    https://raw.githubusercontent.com/chirag127/userscripts/main/copy-email-links/copy-email-links.user.js
+// @downloadURL  https://raw.githubusercontent.com/chirag127/userscripts/main/copy-email-links/copy-email-links.user.js
 // ==/UserScript==
 
 (() => {

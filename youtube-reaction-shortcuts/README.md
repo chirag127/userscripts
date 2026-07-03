@@ -11,7 +11,7 @@ Both keys are remappable via the userscript menu.
 
 ## Install
 
-[![Install](https://img.shields.io/badge/install-userscript-blue)](https://github.com/oriz-org/userscripts/raw/main/youtube-reaction-shortcuts/youtube-reaction-shortcuts.user.js)
+[![Install](https://img.shields.io/badge/install-userscript-blue)](https://raw.githubusercontent.com/chirag127/userscripts/main/youtube-reaction-shortcuts/youtube-reaction-shortcuts.user.js)
 
 Requires Tampermonkey, Violentmonkey, or Userscripts (Safari).
 

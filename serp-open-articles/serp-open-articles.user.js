@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         SERP: open all article results
-// @namespace    https://github.com/oriz-org/userscripts
-// @version      0.1.0
+// @namespace    https://github.com/chirag127/userscripts
+// @version      0.1.1
 // @description  Add a button to search engine result pages that opens all article-type results in new tabs. Skips videos, social, shopping, maps. Deduplicates by URL. Caps at 10 tabs by default with a confirmation dialog above 5.
 // @author       chirag127
 // @match        https://www.google.com/search*
@@ -15,10 +15,10 @@
 // @grant        GM_setValue
 // @grant        GM_getValue
 // @license      MIT
-// @homepageURL  https://github.com/oriz-org/userscripts/tree/main/serp-open-articles
-// @supportURL   https://github.com/oriz-org/userscripts/issues
-// @updateURL    https://github.com/oriz-org/userscripts/raw/main/serp-open-articles/serp-open-articles.user.js
-// @downloadURL  https://github.com/oriz-org/userscripts/raw/main/serp-open-articles/serp-open-articles.user.js
+// @homepageURL  https://github.com/chirag127/userscripts/tree/main/serp-open-articles
+// @supportURL   https://github.com/chirag127/userscripts/issues
+// @updateURL    https://raw.githubusercontent.com/chirag127/userscripts/main/serp-open-articles/serp-open-articles.user.js
+// @downloadURL  https://raw.githubusercontent.com/chirag127/userscripts/main/serp-open-articles/serp-open-articles.user.js
 // ==/UserScript==
 
 (() => {

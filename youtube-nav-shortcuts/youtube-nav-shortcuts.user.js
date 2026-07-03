@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         YouTube — Nav shortcuts (next + previous)
-// @namespace    https://github.com/oriz-org/userscripts
-// @version      0.1.0
+// @namespace    https://github.com/chirag127/userscripts
+// @version      0.1.1
 // @description  Combined: press N to jump to the next video, P to the previous. Both keys are remappable via the Tampermonkey menu.
 // @author       chirag127
 // @match        https://www.youtube.com/*
@@ -11,10 +11,10 @@
 // @grant        GM_setValue
 // @grant        GM_registerMenuCommand
 // @license      MIT
-// @homepageURL  https://github.com/oriz-org/userscripts/tree/main/youtube-nav-shortcuts
-// @supportURL   https://github.com/oriz-org/userscripts/issues
-// @updateURL    https://github.com/oriz-org/userscripts/raw/main/youtube-nav-shortcuts/youtube-nav-shortcuts.user.js
-// @downloadURL  https://github.com/oriz-org/userscripts/raw/main/youtube-nav-shortcuts/youtube-nav-shortcuts.user.js
+// @homepageURL  https://github.com/chirag127/userscripts/tree/main/youtube-nav-shortcuts
+// @supportURL   https://github.com/chirag127/userscripts/issues
+// @updateURL    https://raw.githubusercontent.com/chirag127/userscripts/main/youtube-nav-shortcuts/youtube-nav-shortcuts.user.js
+// @downloadURL  https://raw.githubusercontent.com/chirag127/userscripts/main/youtube-nav-shortcuts/youtube-nav-shortcuts.user.js
 // ==/UserScript==
 
 (() => {

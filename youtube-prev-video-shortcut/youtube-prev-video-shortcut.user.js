@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         YouTube — Previous video (P)
-// @namespace    https://github.com/oriz-org/userscripts
-// @version      0.1.0
+// @namespace    https://github.com/chirag127/userscripts
+// @version      0.1.1
 // @description  Press P to jump to the previous video. Atomic — does one thing only.
 // @author       chirag127
 // @match        https://www.youtube.com/*
@@ -9,10 +9,10 @@
 // @run-at       document-end
 // @grant        none
 // @license      MIT
-// @homepageURL  https://github.com/oriz-org/userscripts/tree/main/youtube-prev-video-shortcut
-// @supportURL   https://github.com/oriz-org/userscripts/issues
-// @updateURL    https://github.com/oriz-org/userscripts/raw/main/youtube-prev-video-shortcut/youtube-prev-video-shortcut.user.js
-// @downloadURL  https://github.com/oriz-org/userscripts/raw/main/youtube-prev-video-shortcut/youtube-prev-video-shortcut.user.js
+// @homepageURL  https://github.com/chirag127/userscripts/tree/main/youtube-prev-video-shortcut
+// @supportURL   https://github.com/chirag127/userscripts/issues
+// @updateURL    https://raw.githubusercontent.com/chirag127/userscripts/main/youtube-prev-video-shortcut/youtube-prev-video-shortcut.user.js
+// @downloadURL  https://raw.githubusercontent.com/chirag127/userscripts/main/youtube-prev-video-shortcut/youtube-prev-video-shortcut.user.js
 // ==/UserScript==
 
 (() => {

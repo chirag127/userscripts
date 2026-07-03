@@ -1,6 +1,6 @@
 # copy-email-links
 
-[⭐ Star this Repo ⭐](https://github.com/oriz-org/userscripts)
+[⭐ Star this Repo ⭐](https://github.com/chirag127/userscripts)
 
 When you click a `mailto:` link, the email address is copied to your clipboard instead of opening your OS mail client. Toast confirms the copy.
 
@@ -8,7 +8,7 @@ When you click a `mailto:` link, the email address is copied to your clipboard i
 
 ## Install
 
-[Click here to install in Tampermonkey / Violentmonkey / ScriptCat](https://github.com/oriz-org/userscripts/raw/main/copy-email-links/copy-email-links.user.js)
+[Click here to install in Tampermonkey / Violentmonkey / ScriptCat](https://raw.githubusercontent.com/chirag127/userscripts/main/copy-email-links/copy-email-links.user.js)
 
 Auto-updates on every push via the `@updateURL` metadata.
 

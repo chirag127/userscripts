@@ -1,17 +1,17 @@
 // ==UserScript==
 // @name         StereoToMono
-// @namespace    https://github.com/oriz-org/userscripts
-// @version      1.0
+// @namespace    https://github.com/chirag127/userscripts
+// @version      1.1.0
 // @description  Convert stereo audio to mono on any page. Auto-detects playing <video> and <audio> elements. Toggle via Tampermonkey menu.
 // @author       chirag127
 // @match        *://*/*
 // @exclude      https://www.youtube.com/embed/*
 // @grant        GM_registerMenuCommand
 // @license      MIT
-// @homepageURL  https://github.com/oriz-org/userscripts/tree/main/stereo-to-mono
-// @supportURL   https://github.com/oriz-org/userscripts/issues
-// @updateURL    https://github.com/oriz-org/userscripts/raw/main/stereo-to-mono/stereo-to-mono.user.js
-// @downloadURL  https://github.com/oriz-org/userscripts/raw/main/stereo-to-mono/stereo-to-mono.user.js
+// @homepageURL  https://github.com/chirag127/userscripts/tree/main/stereo-to-mono
+// @supportURL   https://github.com/chirag127/userscripts/issues
+// @updateURL    https://raw.githubusercontent.com/chirag127/userscripts/main/stereo-to-mono/stereo-to-mono.user.js
+// @downloadURL  https://raw.githubusercontent.com/chirag127/userscripts/main/stereo-to-mono/stereo-to-mono.user.js
 // ==/UserScript==
 
 (() => {

@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Link Klipper (userscript)
-// @namespace    https://github.com/oriz-org/userscripts
-// @version      0.1.0
+// @namespace    https://github.com/chirag127/userscripts
+// @version      0.1.1
 // @description  Extract every link on the current page and export as CSV download or plain-text clipboard. Captures <a href> + <img src>. Userscript replacement for the "Link Klipper" Chrome extension by Codebox.in.
 // @author       chirag127
 // @match        *://*/*
@@ -10,10 +10,10 @@
 // @grant        GM_setClipboard
 // @grant        GM_download
 // @license      MIT
-// @homepageURL  https://github.com/oriz-org/userscripts/tree/main/link-klipper
-// @supportURL   https://github.com/oriz-org/userscripts/issues
-// @updateURL    https://github.com/oriz-org/userscripts/raw/main/link-klipper/link-klipper.user.js
-// @downloadURL  https://github.com/oriz-org/userscripts/raw/main/link-klipper/link-klipper.user.js
+// @homepageURL  https://github.com/chirag127/userscripts/tree/main/link-klipper
+// @supportURL   https://github.com/chirag127/userscripts/issues
+// @updateURL    https://raw.githubusercontent.com/chirag127/userscripts/main/link-klipper/link-klipper.user.js
+// @downloadURL  https://raw.githubusercontent.com/chirag127/userscripts/main/link-klipper/link-klipper.user.js
 // ==/UserScript==
 
 (() => {

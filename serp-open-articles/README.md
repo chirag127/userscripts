@@ -28,7 +28,7 @@ The script also de-duplicates by host + path so cached/AMP copies of the same ar
 ## Install
 
 1. Install [Tampermonkey](https://www.tampermonkey.net/) (or Violentmonkey / ScriptCat).
-2. Click → **[install](https://github.com/oriz-org/userscripts/raw/main/serp-open-articles/serp-open-articles.user.js)**
+2. Click → **[install](https://github.com/chirag127/userscripts/raw/main/serp-open-articles/serp-open-articles.user.js)**
 
 ## Use
 

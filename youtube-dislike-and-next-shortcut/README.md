@@ -6,7 +6,7 @@ Default key: **X**. Remappable.
 
 ## Install
 
-[![Install](https://img.shields.io/badge/install-userscript-blue)](https://github.com/oriz-org/userscripts/raw/main/youtube-dislike-and-next-shortcut/youtube-dislike-and-next-shortcut.user.js)
+[![Install](https://img.shields.io/badge/install-userscript-blue)](https://github.com/chirag127/userscripts/raw/main/youtube-dislike-and-next-shortcut/youtube-dislike-and-next-shortcut.user.js)
 
 Requires Tampermonkey, Violentmonkey, or Userscripts (Safari).
 
