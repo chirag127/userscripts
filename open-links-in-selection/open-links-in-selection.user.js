@@ -1,17 +1,17 @@
 // ==UserScript==
 // @name         Open all links in selection
-// @namespace    https://github.com/chirag127/userscripts
-// @version      0.1.1
+// @namespace    https://github.com/oriz-labs/userscripts
+// @version      0.1.2
 // @description  Tampermonkey menu command — opens every link found in the current text selection in new tabs. Catches both <a href> elements AND plain-text URLs (http://, https://, www.).
 // @author       chirag127
 // @match        *://*/*
 // @run-at       document-end
 // @grant        GM_registerMenuCommand
 // @license      MIT
-// @homepageURL  https://github.com/chirag127/userscripts/tree/main/open-links-in-selection
-// @supportURL   https://github.com/chirag127/userscripts/issues
-// @updateURL    https://raw.githubusercontent.com/chirag127/userscripts/main/open-links-in-selection/open-links-in-selection.user.js
-// @downloadURL  https://raw.githubusercontent.com/chirag127/userscripts/main/open-links-in-selection/open-links-in-selection.user.js
+// @homepageURL  https://github.com/oriz-labs/userscripts/tree/main/open-links-in-selection
+// @supportURL   https://github.com/oriz-labs/userscripts/issues
+// @updateURL    https://raw.githubusercontent.com/oriz-labs/userscripts/main/open-links-in-selection/open-links-in-selection.user.js
+// @downloadURL  https://raw.githubusercontent.com/oriz-labs/userscripts/main/open-links-in-selection/open-links-in-selection.user.js
 // ==/UserScript==
 
 (() => {

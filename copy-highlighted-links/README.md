@@ -1,6 +1,6 @@
 # copy-highlighted-links
 
-[⭐ Star this Repo ⭐](https://github.com/chirag127/userscripts)
+[⭐ Star this Repo ⭐](https://github.com/oriz-labs/userscripts)
 
 Select any text on a page that contains links → trigger the Tampermonkey menu → every URL in the selection is copied to your clipboard, one per line.
 
@@ -8,7 +8,7 @@ Select any text on a page that contains links → trigger the Tampermonkey menu 
 
 ## Install
 
-[Click here to install in Tampermonkey / Violentmonkey / ScriptCat](https://raw.githubusercontent.com/chirag127/userscripts/main/copy-highlighted-links/copy-highlighted-links.user.js)
+[Click here to install in Tampermonkey / Violentmonkey / ScriptCat](https://raw.githubusercontent.com/oriz-labs/userscripts/main/copy-highlighted-links/copy-highlighted-links.user.js)
 
 Auto-updates on every push via the `@updateURL` metadata.
 

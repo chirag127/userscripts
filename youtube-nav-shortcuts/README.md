@@ -11,7 +11,7 @@ Both keys are remappable via the userscript menu.
 
 ## Install
 
-[![Install](https://img.shields.io/badge/install-userscript-blue)](https://github.com/chirag127/userscripts/raw/main/youtube-nav-shortcuts/youtube-nav-shortcuts.user.js)
+[![Install](https://img.shields.io/badge/install-userscript-blue)](https://github.com/oriz-labs/userscripts/raw/main/youtube-nav-shortcuts/youtube-nav-shortcuts.user.js)
 
 Requires Tampermonkey, Violentmonkey, or Userscripts (Safari).
 

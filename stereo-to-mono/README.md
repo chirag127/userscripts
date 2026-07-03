@@ -5,7 +5,7 @@ Userscript that **converts stereo audio to mono** on any page. Works with `<vide
 ## Install
 
 1. Install a userscript manager: [Tampermonkey](https://www.tampermonkey.net/), [Violentmonkey](https://violentmonkey.github.io/), or [ScriptCat](https://scriptcat.org/).
-2. Click → **[install](https://raw.githubusercontent.com/chirag127/userscripts/main/stereo-to-mono/stereo-to-mono.user.js)**
+2. Click → **[install](https://raw.githubusercontent.com/oriz-labs/userscripts/main/stereo-to-mono/stereo-to-mono.user.js)**
 
 ## How it works
 

@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Copy highlighted links
-// @namespace    https://github.com/chirag127/userscripts
-// @version      0.1.1
+// @namespace    https://github.com/oriz-labs/userscripts
+// @version      0.1.2
 // @description  Copy URLs of every link found in the current text selection to the clipboard (one per line). Tampermonkey menu command — same behavior as the "Copy Highlighted Links" Chrome extension by CraftedIntuition, plus plain-text URL detection.
 // @author       chirag127
 // @match        *://*/*
@@ -9,10 +9,10 @@
 // @grant        GM_registerMenuCommand
 // @grant        GM_setClipboard
 // @license      MIT
-// @homepageURL  https://github.com/chirag127/userscripts/tree/main/copy-highlighted-links
-// @supportURL   https://github.com/chirag127/userscripts/issues
-// @updateURL    https://raw.githubusercontent.com/chirag127/userscripts/main/copy-highlighted-links/copy-highlighted-links.user.js
-// @downloadURL  https://raw.githubusercontent.com/chirag127/userscripts/main/copy-highlighted-links/copy-highlighted-links.user.js
+// @homepageURL  https://github.com/oriz-labs/userscripts/tree/main/copy-highlighted-links
+// @supportURL   https://github.com/oriz-labs/userscripts/issues
+// @updateURL    https://raw.githubusercontent.com/oriz-labs/userscripts/main/copy-highlighted-links/copy-highlighted-links.user.js
+// @downloadURL  https://raw.githubusercontent.com/oriz-labs/userscripts/main/copy-highlighted-links/copy-highlighted-links.user.js
 // ==/UserScript==
 
 (() => {

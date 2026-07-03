@@ -1,6 +1,6 @@
 # link-klipper
 
-[⭐ Star this Repo ⭐](https://github.com/chirag127/userscripts)
+[⭐ Star this Repo ⭐](https://github.com/oriz-labs/userscripts)
 
 Extract every link on the current page → download as CSV or copy URLs to clipboard. Captures both `<a href>` anchors and `<img src>` images.
 
@@ -8,7 +8,7 @@ Extract every link on the current page → download as CSV or copy URLs to clipb
 
 ## Install
 
-[Click here to install in Tampermonkey / Violentmonkey / ScriptCat](https://raw.githubusercontent.com/chirag127/userscripts/main/link-klipper/link-klipper.user.js)
+[Click here to install in Tampermonkey / Violentmonkey / ScriptCat](https://raw.githubusercontent.com/oriz-labs/userscripts/main/link-klipper/link-klipper.user.js)
 
 Auto-updates on every push via the `@updateURL` metadata.
 

@@ -12,7 +12,7 @@ Skips: `javascript:`, `mailto:`, `tel:`, and hash-only anchors.
 ## Install
 
 1. Install [Tampermonkey](https://www.tampermonkey.net/) (or Violentmonkey / ScriptCat).
-2. Click → **[install](https://raw.githubusercontent.com/chirag127/userscripts/main/open-links-in-selection/open-links-in-selection.user.js)**
+2. Click → **[install](https://raw.githubusercontent.com/oriz-labs/userscripts/main/open-links-in-selection/open-links-in-selection.user.js)**
 
 ## Use
 

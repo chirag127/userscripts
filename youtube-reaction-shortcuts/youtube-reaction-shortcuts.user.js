@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         YouTube — Reaction shortcuts (like + dislike)
-// @namespace    https://github.com/chirag127/userscripts
-// @version      0.1.1
+// @namespace    https://github.com/oriz-labs/userscripts
+// @version      0.1.2
 // @description  Combined: press S to like, D to dislike the current video. Both keys are remappable via the Tampermonkey menu.
 // @author       chirag127
 // @match        https://www.youtube.com/*
@@ -11,10 +11,10 @@
 // @grant        GM_setValue
 // @grant        GM_registerMenuCommand
 // @license      MIT
-// @homepageURL  https://github.com/chirag127/userscripts/tree/main/youtube-reaction-shortcuts
-// @supportURL   https://github.com/chirag127/userscripts/issues
-// @updateURL    https://raw.githubusercontent.com/chirag127/userscripts/main/youtube-reaction-shortcuts/youtube-reaction-shortcuts.user.js
-// @downloadURL  https://raw.githubusercontent.com/chirag127/userscripts/main/youtube-reaction-shortcuts/youtube-reaction-shortcuts.user.js
+// @homepageURL  https://github.com/oriz-labs/userscripts/tree/main/youtube-reaction-shortcuts
+// @supportURL   https://github.com/oriz-labs/userscripts/issues
+// @updateURL    https://raw.githubusercontent.com/oriz-labs/userscripts/main/youtube-reaction-shortcuts/youtube-reaction-shortcuts.user.js
+// @downloadURL  https://raw.githubusercontent.com/oriz-labs/userscripts/main/youtube-reaction-shortcuts/youtube-reaction-shortcuts.user.js
 // ==/UserScript==
 
 (() => {

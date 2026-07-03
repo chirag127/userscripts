@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         YouTube — Dislike & next (X)
-// @namespace    https://github.com/chirag127/userscripts
-// @version      0.1.1
+// @namespace    https://github.com/oriz-labs/userscripts
+// @version      0.1.2
 // @description  Press X to dislike the current video AND immediately skip to the next one. Key is remappable via the Tampermonkey menu.
 // @author       chirag127
 // @match        https://www.youtube.com/*
@@ -11,10 +11,10 @@
 // @grant        GM_setValue
 // @grant        GM_registerMenuCommand
 // @license      MIT
-// @homepageURL  https://github.com/chirag127/userscripts/tree/main/youtube-dislike-and-next-shortcut
-// @supportURL   https://github.com/chirag127/userscripts/issues
-// @updateURL    https://raw.githubusercontent.com/chirag127/userscripts/main/youtube-dislike-and-next-shortcut/youtube-dislike-and-next-shortcut.user.js
-// @downloadURL  https://raw.githubusercontent.com/chirag127/userscripts/main/youtube-dislike-and-next-shortcut/youtube-dislike-and-next-shortcut.user.js
+// @homepageURL  https://github.com/oriz-labs/userscripts/tree/main/youtube-dislike-and-next-shortcut
+// @supportURL   https://github.com/oriz-labs/userscripts/issues
+// @updateURL    https://raw.githubusercontent.com/oriz-labs/userscripts/main/youtube-dislike-and-next-shortcut/youtube-dislike-and-next-shortcut.user.js
+// @downloadURL  https://raw.githubusercontent.com/oriz-labs/userscripts/main/youtube-dislike-and-next-shortcut/youtube-dislike-and-next-shortcut.user.js
 // ==/UserScript==
 
 (() => {

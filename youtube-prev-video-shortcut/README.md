@@ -6,7 +6,7 @@ Does one thing only.
 
 ## Install
 
-[![Install](https://img.shields.io/badge/install-userscript-blue)](https://github.com/chirag127/userscripts/raw/main/youtube-prev-video-shortcut/youtube-prev-video-shortcut.user.js)
+[![Install](https://img.shields.io/badge/install-userscript-blue)](https://github.com/oriz-labs/userscripts/raw/main/youtube-prev-video-shortcut/youtube-prev-video-shortcut.user.js)
 
 Requires Tampermonkey, Violentmonkey, or Userscripts (Safari).
 
