@@ -1,5 +1,7 @@
 # userscripts
 
+[![GitHub stars](https://img.shields.io/github/stars/chirag127/userscripts?style=social)](https://github.com/chirag127/userscripts/stargazers)
+
 Personal userscripts collection by [@chirag127](https://github.com/chirag127), hosted under [chirag127](https://github.com/chirag127). Tampermonkey / ScriptCat / Violentmonkey compatible.
 
 ## Install
