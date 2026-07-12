@@ -1,0 +1,14 @@
+{
+	"name": "userscripts",
+	"version": "0.0.0",
+	"private": true,
+	"type": "module",
+	"description": "Searchable install catalog + fleet automation for chirag127/userscripts.",
+	"homepage": "https://userscripts.oriz.in",
+	"license": "MIT",
+	"scripts": {
+		"validate": "node scripts/validate-userscripts.mjs",
+		"build": "node scripts/build-catalog.mjs",
+		"lint": "node scripts/validate-userscripts.mjs && node --check scripts/build-catalog.mjs"
+	}
+}
