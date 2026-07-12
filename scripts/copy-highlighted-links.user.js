@@ -1,0 +1,225 @@
+// ==UserScript==
+// @name         Copy highlighted links
+// @namespace    https://github.com/chirag127/userscripts-script
+// @version      0.1.3
+// @description  Copy URLs of every link found in the current text selection to the clipboard (one per line). Tampermonkey menu command — same behavior as the "Copy Highlighted Links" Chrome extension by CraftedIntuition, plus plain-text URL detection.
+// @author       chirag127
+// @match        *://*/*
+// @run-at       document-end
+// @grant        GM_registerMenuCommand
+// @grant        GM_setClipboard
+// @license      MIT
+// @homepageURL  https://github.com/chirag127/userscripts-script/blob/main/scripts/copy-highlighted-links.user.js
+// @supportURL   https://github.com/chirag127/userscripts-script/issues
+// @updateURL    https://raw.githubusercontent.com/chirag127/userscripts-script/main/scripts/copy-highlighted-links.user.js
+// @downloadURL  https://raw.githubusercontent.com/chirag127/userscripts-script/main/scripts/copy-highlighted-links.user.js
+// ==/UserScript==
+
+/*
+README (folded from copy-highlighted-links/README.md during flat-restructure 2026-07-12)
+
+# copy-highlighted-links
+
+[⭐ Star this Repo ⭐](https://github.com/chirag127/userscripts-script)
+
+Select any text on a page that contains links → trigger the Tampermonkey menu → every URL in the selection is copied to your clipboard, one per line.
+
+> Userscript replacement for the open-source [Copy Highlighted Links](https://github.com/CraftedIntuition/copy-highlighted-links) Chrome extension by CraftedIntuition (CWS ID `bicbefnmikccjbindlnjbollkinbnhhp`). Same core behavior, plus plain-text URL detection (matches `http://`, `https://`, and bare `www.*` strings inside the selected text).
+
+## Install
+
+[Click here to install in Tampermonkey / Violentmonkey / ScriptCat](https://raw.githubusercontent.com/chirag127/userscripts-script/main/scripts/copy-highlighted-links.user.js)
+
+Auto-updates on every push via the `@updateURL` metadata.
+
+## Usage
+
+1. Select (highlight) any text on a webpage that contains links — anchor tags AND/OR plain-text URLs
+2. Click the Tampermonkey/Violentmonkey/ScriptCat puzzle-piece icon → **Copy highlighted links**
+3. URLs are now on your clipboard, one per line
+4. Toast confirms the count (e.g. `Copied 5 links to clipboard`)
+
+If your userscript manager supports per-script hotkeys (Tampermonkey does), assign one to the menu command for one-keystroke copy.
+
+## Honest difference from the original Chrome extension
+
+The original lives in the browser's **right-click context menu** (`contexts: ["selection"]`). Userscripts cannot add native right-click menu items — that's a Chromium security boundary, not a script-engine limitation. So this userscript surfaces through the Tampermonkey extension menu (puzzle-piece icon → script name) instead. Same one-click experience, just a different click target.
+
+**Workarounds for right-click feel:**
+- **Tampermonkey hotkey** — Settings → Edit script → Menu command → assign `Alt+C` (or anything). One keystroke, no right-click needed.
+- **Tampermonkey's "Show this script's menu in the page context menu"** — Tampermonkey *can* surface its commands in the page's right-click menu on some Chromium versions; toggle in Tampermonkey settings → Extension → Context menu. Mileage varies by browser.
+
+## Features
+
+| | Upstream extension | This userscript |
+|---|---|---|
+| Copy `<a href>` from selection | ✅ | ✅ |
+| Copy plain-text URLs (`https://...`, `www....`) from selection | ❌ | ✅ |
+| Skip `javascript:`, `mailto:`, `tel:`, `#hash` anchors | ❌ (copies all) | ✅ |
+| Handle multi-range selections | ❌ | ✅ |
+| Handle selection entirely *inside* an `<a>` | ⚠️ partial | ✅ |
+| Works on `http://` (non-secure) pages | ⚠️ depends on Clipboard API | ✅ (`GM_setClipboard` fallback) |
+| Toast feedback | ✅ (chrome.notifications) | ✅ (DOM toast) |
+| Cross-browser (Firefox/Safari) | ❌ Chromium-only | ✅ Tampermonkey-supported browsers |
+
+## Compatibility
+
+| Manager | Status |
+|---|---|
+| Tampermonkey (Chrome/Edge/Firefox/Safari) | ✅ |
+| Violentmonkey (Chrome/Firefox) | ✅ |
+| ScriptCat (Chrome/Edge) | ✅ |
+| Greasemonkey 4+ (Firefox legacy) | ⚠️ — uses `GM_*` not `GM.*`. Replace `GM_setClipboard` with `GM.setClipboard` if needed. |
+
+## Privacy
+
+The script reads `<a href>` elements and rendered text inside your current page's selection. Nothing leaves your machine. No network requests, no telemetry, no analytics.
+
+## License
+
+MIT. See [LICENSE](../LICENSE).
+*/
+
+(() => {
+  'use strict'
+
+  // Matches http://, https://, and bare www.* URLs. Allows the common URL char set
+  // and stops at whitespace, common surrounding punctuation, and quotes/brackets.
+  // (Same regex as `open-links-in-selection` for behavior parity.)
+  const URL_RE = /\b((?:https?:\/\/|www\.)[^\s<>"'`()\[\]{},]+[^\s<>"'`()\[\]{},.;:!?])/gi
+
+  // Identical collection logic to `open-links-in-selection.user.js`.
+  // Deliberately duplicated rather than sharing a module — userscript managers
+  // don't have a reliable cross-script import story, and copy-paste is auditable.
+  function collectLinksFromSelection() {
+    const sel = window.getSelection()
+    if (!sel || sel.isCollapsed || sel.rangeCount === 0) return []
+
+    const found = new Set()
+
+    // 1. Plain-text URLs inside the selection's stringified content.
+    const text = sel.toString()
+    if (text) {
+      for (const m of text.matchAll(URL_RE)) {
+        let u = m[1]
+        if (u.startsWith('www.')) u = 'https://' + u
+        found.add(u)
+      }
+    }
+
+    // 2. <a href> elements that intersect the selection range.
+    const activeEl = document.activeElement
+    const inTextarea =
+      activeEl && (activeEl.tagName === 'TEXTAREA' || (activeEl.tagName === 'INPUT' && activeEl.type === 'text'))
+
+    if (!inTextarea) {
+      for (let i = 0; i < sel.rangeCount; i++) {
+        const range = sel.getRangeAt(i)
+        const root = range.commonAncestorContainer
+        const rootEl = root.nodeType === Node.ELEMENT_NODE ? root : root.parentElement
+        if (!rootEl) continue
+        const anchors = rootEl.querySelectorAll('a[href]')
+        for (const a of anchors) {
+          if (!range.intersectsNode(a)) continue
+          const href = a.href
+          if (!href) continue
+          // Skip javascript:, mailto:, tel:, hash-only anchors
+          if (/^(javascript:|mailto:|tel:|#)/i.test(href)) continue
+          found.add(href)
+        }
+        // Also walk ancestors of both endpoints — selection started/ended INSIDE
+        // a single <a> won't appear in commonAncestorContainer's descendants.
+        for (const node of [range.startContainer, range.endContainer]) {
+          let el = node.nodeType === Node.ELEMENT_NODE ? node : node.parentElement
+          while (el && el !== document.body) {
+            if (el.tagName === 'A' && el.href && !/^(javascript:|mailto:|tel:|#)/i.test(el.href)) {
+              found.add(el.href)
+              break
+            }
+            el = el.parentElement
+          }
+        }
+      }
+    }
+
+    return [...found]
+  }
+
+  async function writeClipboard(text) {
+    // Prefer GM_setClipboard when available — bypasses navigator.clipboard
+    // gesture requirement and works on http:// pages too.
+    if (typeof GM_setClipboard === 'function') {
+      try { GM_setClipboard(text, 'text'); return true } catch { /* fall through */ }
+    }
+    try {
+      await navigator.clipboard.writeText(text)
+      return true
+    } catch {
+      // execCommand fallback for old http:// pages where Clipboard API is blocked.
+      const ta = document.createElement('textarea')
+      ta.value = text
+      ta.style.position = 'fixed'
+      ta.style.left = '-9999px'
+      document.body.appendChild(ta)
+      ta.select()
+      let ok = false
+      try { ok = document.execCommand('copy') } catch { /* ignore */ }
+      ta.remove()
+      return ok
+    }
+  }
+
+  // Tiny toast — minimal styling, max-z, gone after 2.5s.
+  function toast(message) {
+    const el = document.createElement('div')
+    Object.assign(el.style, {
+      position: 'fixed',
+      left: '50%',
+      bottom: '20px',
+      transform: 'translateX(-50%)',
+      zIndex: '2147483647',
+      padding: '12px 20px',
+      borderRadius: '8px',
+      backgroundColor: 'rgba(0, 0, 0, 0.75)',
+      color: '#fff',
+      fontFamily: 'system-ui, -apple-system, "Segoe UI", sans-serif',
+      fontSize: '14px',
+      fontWeight: '600',
+      boxShadow: '0 4px 14px rgba(0, 0, 0, 0.4)',
+      pointerEvents: 'none',
+      transition: 'opacity 250ms ease-in-out',
+      opacity: '0',
+    })
+    el.textContent = message
+    document.body.appendChild(el)
+    requestAnimationFrame(() => { el.style.opacity = '1' })
+    setTimeout(() => {
+      el.style.opacity = '0'
+      setTimeout(() => el.remove(), 300)
+    }, 2500)
+  }
+
+  async function run() {
+    const urls = collectLinksFromSelection()
+    if (urls.length === 0) {
+      toast('No links found in selection')
+      return
+    }
+    const payload = urls.join('\n')
+    const ok = await writeClipboard(payload)
+    if (ok) {
+      toast(`Copied ${urls.length} link${urls.length === 1 ? '' : 's'} to clipboard`)
+    } else {
+      toast('Clipboard copy failed (page may block clipboard access)')
+      console.warn('[copy-highlighted-links] failed to write clipboard; URLs:', urls)
+    }
+  }
+
+  if (typeof GM_registerMenuCommand === 'function') {
+    GM_registerMenuCommand('Copy highlighted links', run, { accessKey: 'c' })
+  }
+
+  // Devtools-friendly global for keybind bindings via Tampermonkey's UI.
+  // @ts-ignore — userscript global
+  window.__copyHighlightedLinks = run
+})()

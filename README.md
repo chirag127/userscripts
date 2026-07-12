@@ -1,51 +1,49 @@
 # userscripts
 
-[![GitHub stars](https://img.shields.io/github/stars/chirag127/userscripts?style=social)](https://github.com/chirag127/userscripts/stargazers)
+[![GitHub stars](https://img.shields.io/github/stars/chirag127/userscripts-script?style=social)](https://github.com/chirag127/userscripts-script/stargazers)
 
-Personal userscripts collection by [@chirag127](https://github.com/chirag127), hosted under [chirag127](https://github.com/chirag127). Tampermonkey / ScriptCat / Violentmonkey compatible.
+Personal userscripts collection by [@chirag127](https://github.com/chirag127). Tampermonkey / ScriptCat / Violentmonkey compatible.
+
+All scripts live flat in [`scripts/`](./scripts/) as `<name>.user.js`. Per-script docs are folded into each file's header comment.
 
 ## Install
 
-Click the **install** link next to any userscript below. Tampermonkey or ScriptCat will prompt to install + auto-update from this repo.
+Click **install** next to any userscript below. Your userscript manager will prompt to install + auto-update from this repo.
 
 | Userscript | Site | What it does | Install |
 |---|---|---|---|
-| **stereo-to-mono** | any page | Convert stereo audio to mono on any `<video>`/`<audio>` element. Toggle via Tampermonkey menu. Auto-detects playing media. | [install](https://raw.githubusercontent.com/chirag127/userscripts/main/stereo-to-mono/stereo-to-mono.user.js) |
-| **youtube-nav-shortcuts** | youtube.com | **Combined**: press **N** for next video, **P** for previous. Both keys remappable via the userscript menu. | [install](https://raw.githubusercontent.com/chirag127/userscripts/main/youtube-nav-shortcuts/youtube-nav-shortcuts.user.js) |
-| **youtube-reaction-shortcuts** | youtube.com | **Combined**: press **S** to like, **D** to dislike. Both keys remappable via the userscript menu. | [install](https://raw.githubusercontent.com/chirag127/userscripts/main/youtube-reaction-shortcuts/youtube-reaction-shortcuts.user.js) |
-| **youtube-dislike-and-next-shortcut** | youtube.com | One key to dislike **and** skip to next. Default **X**, remappable. | [install](https://raw.githubusercontent.com/chirag127/userscripts/main/youtube-dislike-and-next-shortcut/youtube-dislike-and-next-shortcut.user.js) |
-| **youtube-like-and-next-shortcut** | youtube.com | One key to like **and** skip to next. Default **A**, remappable. | [install](https://raw.githubusercontent.com/chirag127/userscripts/main/youtube-like-and-next-shortcut/youtube-like-and-next-shortcut.user.js) |
-| **youtube-next-video-shortcut** | youtube.com | Press **N** anywhere on a YouTube page to jump to the next video. Atomic. | [install](https://raw.githubusercontent.com/chirag127/userscripts/main/youtube-next-video-shortcut/youtube-next-video-shortcut.user.js) |
-| **youtube-prev-video-shortcut** | youtube.com | Press **P** anywhere on a YouTube page to jump to the previous video. Atomic. | [install](https://raw.githubusercontent.com/chirag127/userscripts/main/youtube-prev-video-shortcut/youtube-prev-video-shortcut.user.js) |
-| **youtube-dislike-shortcut** | youtube.com | Press **D** anywhere on a YouTube video to dislike / un-dislike it. Atomic. | [install](https://raw.githubusercontent.com/chirag127/userscripts/main/youtube-dislike-shortcut/youtube-dislike-shortcut.user.js) |
-| **open-links-in-selection** | any page | Open every link found in the current selection (anchors + plain-text URLs). Triggered via the Tampermonkey extension menu. Confirms before opening ≥ 5 tabs. | [install](https://raw.githubusercontent.com/chirag127/userscripts/main/open-links-in-selection/open-links-in-selection.user.js) |
-| **copy-email-links** | any page | Click any `mailto:` link → email address copied to clipboard instead of opening OS mail client. Toast confirms. Replaces the closed-source "Copy email links" Chrome extension. | [install](https://raw.githubusercontent.com/chirag127/userscripts/main/copy-email-links/copy-email-links.user.js) |
-| **copy-highlighted-links** | any page | Copy URLs of every link in the current selection to the clipboard, one per line. Catches `<a href>` AND plain-text URLs. Replaces the "Copy Highlighted Links" Chrome extension. | [install](https://raw.githubusercontent.com/chirag127/userscripts/main/copy-highlighted-links/copy-highlighted-links.user.js) |
-| **link-klipper** | any page | Extract every link on the page → download as CSV or copy URLs to clipboard. `Ctrl+Shift+K` hotkey. Captures `<a href>` + `<img src>`. Replaces the "Link Klipper" Chrome extension (no hover-pick mode). | [install](https://raw.githubusercontent.com/chirag127/userscripts/main/link-klipper/link-klipper.user.js) |
-| **serp-open-articles** | Google / Bing / DuckDuckGo / Brave / Startpage / Kagi | Adds an **Open all article results (N)** button to SERPs that opens every article-type result in a new tab. URL-pattern filter skips videos, social, shopping, maps. Dedupes by host+path. Caps at 10 tabs (configurable) with a confirm dialog above 5. | [install](https://raw.githubusercontent.com/chirag127/userscripts/main/serp-open-articles/serp-open-articles.user.js) |
-
-## Layout
-
-```
-userscripts/
-├── <name>/
-│   ├── <name>.user.js   # the userscript (Tampermonkey metadata header at the top)
-│   └── README.md        # what it does, screenshots, install URL
-├── README.md            # this file (auto-generated index)
-└── LICENSE              # MIT
-```
-
-One folder per userscript. Each ships as a single `.user.js` file. The metadata block uses `@updateURL` + `@downloadURL` pointing at the GitHub raw URL so Tampermonkey auto-updates on every push.
-
-## Manager compatibility
-
-| Manager | Tested | Notes |
-|---|---|---|
-| Tampermonkey (Chrome / Firefox / Edge) | ✅ | The default. |
-| Violentmonkey (Chrome / Firefox) | ✅ | Same metadata block. |
-| ScriptCat | ✅ | Adds `@background`, `@crontab`, `==UserConfig==` extensions if a userscript opts in. |
-| Greasemonkey (Firefox-only legacy) | ⚠️ | Some `GM_*` APIs deprecated; modern userscripts use `GM.` namespace. |
+| **Add copy buttons to <pre><code> blocks** | any page | Inject a small "copy" button on every code block so you can grab the snippet without hand-selecting. One click copies innerText; button flashes "co... | [install](https://raw.githubusercontent.com/chirag127/userscripts-script/main/scripts/add-code-copy-buttons.user.js) |
+| **AI chat — Auto-continue truncated responses** | https://chatgpt.com/* | Auto-clicks the "Continue" button on ChatGPT / Claude / Gemini when a response is cut off by output-token limits, so long generations complete unat... | [install](https://raw.githubusercontent.com/chirag127/userscripts-script/main/scripts/ai-chat-auto-continue.user.js) |
+| **Restore right-click + selection + hotkeys** | any page | Neutralises pages that block right-click, text selection, copy/cut, drag, and keyboard shortcuts. Stops the hijack at document-start before the hos... | [install](https://raw.githubusercontent.com/chirag127/userscripts-script/main/scripts/anti-hijack-guard.user.js) |
+| **Auto-reject cookie banners** | any page | Auto-click the "reject all" button on cookie consent banners (OneTrust, Cookiebot, TrustArc, Osano, Didomi + generic fallbacks). Why: opt-out is th... | [install](https://raw.githubusercontent.com/chirag127/userscripts-script/main/scripts/auto-reject-cookies.user.js) |
+| **Copy email links** | any page | When you click a mailto: link, copy the email address to your clipboard instead of opening the OS mail client. Toast confirms the copy. Replaces th... | [install](https://raw.githubusercontent.com/chirag127/userscripts-script/main/scripts/copy-email-links.user.js) |
+| **Copy highlighted links** | any page | Copy URLs of every link found in the current text selection to the clipboard (one per line). Tampermonkey menu command — same behavior as the "Copy... | [install](https://raw.githubusercontent.com/chirag127/userscripts-script/main/scripts/copy-highlighted-links.user.js) |
+| **Preview shortlinks on hover** | any page | Hover a bit.ly / t.co / tinyurl / etc. link and see the resolved destination in a tooltip before clicking. Avoids opening blind shorteners that may... | [install](https://raw.githubusercontent.com/chirag127/userscripts-script/main/scripts/expand-shortlinks.user.js) |
+| **Fake Filler** | any page | Fill every form input/textarea/select on the page with realistic dummy data via a hotkey (Ctrl+Shift+F) or the userscript menu. Replaces the "Fake ... | [install](https://raw.githubusercontent.com/chirag127/userscripts-script/main/scripts/fake-filler.user.js) |
+| **Link Klipper (userscript)** | any page | Extract every link on the current page and export as CSV download or plain-text clipboard. Captures <a href> + <img src>. Userscript replacement fo... | [install](https://raw.githubusercontent.com/chirag127/userscripts-script/main/scripts/link-klipper.user.js) |
+| **Open all links in selection** | any page | Tampermonkey menu command — opens every link found in the current text selection in new tabs. Catches both <a href> elements AND plain-text URLs (h... | [install](https://raw.githubusercontent.com/chirag127/userscripts-script/main/scripts/open-links-in-selection.user.js) |
+| **Per-domain persistent scratchpad** | any page | Fixed-position textarea per hostname. Notes persist across page loads via GM storage. Toggle from menu, Esc to close. Useful for jotting selectors,... | [install](https://raw.githubusercontent.com/chirag127/userscripts-script/main/scripts/per-site-scratchpad.user.js) |
+| **Picture-in-Picture Hotkey** | any page | Toggle Picture-in-Picture on the largest/active <video> with a hotkey (Alt+P) or the userscript menu. Replaces Google's "Picture-in-Picture Extensi... | [install](https://raw.githubusercontent.com/chirag127/userscripts-script/main/scripts/pip-hotkey.user.js) |
+| **Read Aloud** | any page | Read the selected text (or the whole article) aloud using the browser's built-in speech synthesis. Hotkey Alt+R to start/stop, Alt+. to pause/resum... | [install](https://raw.githubusercontent.com/chirag127/userscripts-script/main/scripts/read-aloud.user.js) |
+| **Force old.reddit.com** | reddit.com | Redirect new Reddit (www/sh/bare) to old.reddit.com. Old UI loads faster, no infinite-scroll, saner comment threading. | [install](https://raw.githubusercontent.com/chirag127/userscripts-script/main/scripts/reddit-force-old.user.js) |
+| **Reopen recent URLs (cross-tab history)** | any page | Keep a rolling ring-buffer of the last 30 URLs you closed across all tabs. Menu command opens an overlay listing them; click any to reopen in a new... | [install](https://raw.githubusercontent.com/chirag127/userscripts-script/main/scripts/reopen-recent-urls.user.js) |
+| **SERP — Toggle site:reddit.com button** | reddit.com | One-click button to add/remove `site:reddit.com` from the current search query on Google, DuckDuckGo, and Bing. For when you want real answers, not... | [install](https://raw.githubusercontent.com/chirag127/userscripts-script/main/scripts/search-reddit-button.user.js) |
+| **SERP: open all article results** | https://www.google.com/search* | Add a button to search engine result pages that opens all article-type results in new tabs. Skips videos, social, shopping, maps. Deduplicates by U... | [install](https://raw.githubusercontent.com/chirag127/userscripts-script/main/scripts/serp-open-articles.user.js) |
+| **SERP: highlight oriz-recommended sites** | https://www.google.com/search* | Adds a small gold star to search-result rows on Google, DuckDuckGo, and Bing when the hostname appears in Chirag's curated 2026 links directory at ... | [install](https://raw.githubusercontent.com/chirag127/userscripts-script/main/scripts/serp-oriz-highlight.user.js) |
+| **StereoToMono** | any page | Convert stereo audio to mono on any page. Auto-detects playing <video> and <audio> elements. Toggle via Tampermonkey menu. | [install](https://raw.githubusercontent.com/chirag127/userscripts-script/main/scripts/stereo-to-mono.user.js) |
+| **Strip URL tracking params** | any page | Strip utm_*, fbclid, gclid, mc_eid, msclkid etc. from the address bar on load and from URLs copied to clipboard. No more tracking-tagged links past... | [install](https://raw.githubusercontent.com/chirag127/userscripts-script/main/scripts/url-cleaner.user.js) |
+| **Video Speed Controller** | any page | Control playback speed of any HTML5 <video>/<audio> with keyboard shortcuts (S slower, D faster, R reset, Z rewind 5s, X advance 5s) plus a draggab... | [install](https://raw.githubusercontent.com/chirag127/userscripts-script/main/scripts/video-speed-controller.user.js) |
+| **YouTube — Copy Title + Channel + URL as markdown** | youtube.com | Ctrl+Shift+Y copies the current video as a markdown link with title, channel, and a timestamped URL. Shortcut remappable via menu. | [install](https://raw.githubusercontent.com/chirag127/userscripts-script/main/scripts/youtube-copy-context.user.js) |
+| **YouTube — Dislike & next (X)** | youtube.com | Press X to dislike the current video AND immediately skip to the next one. Key is remappable via the Tampermonkey menu. | [install](https://raw.githubusercontent.com/chirag127/userscripts-script/main/scripts/youtube-dislike-and-next-shortcut.user.js) |
+| **YouTube — Dislike (D)** | youtube.com | Press D to dislike the current video. Atomic — does one thing only. | [install](https://raw.githubusercontent.com/chirag127/userscripts-script/main/scripts/youtube-dislike-shortcut.user.js) |
+| **YouTube — Hide Shorts everywhere** | youtube.com | Hides Shorts shelves + sidebar entry, and redirects /shorts/<id> to /watch?v=<id> so Shorts play as regular videos. | [install](https://raw.githubusercontent.com/chirag127/userscripts-script/main/scripts/youtube-hide-shorts.user.js) |
+| **YouTube — Like & next (A)** | youtube.com | Press A to like the current video AND immediately skip to the next one. Key is remappable via the Tampermonkey menu. | [install](https://raw.githubusercontent.com/chirag127/userscripts-script/main/scripts/youtube-like-and-next-shortcut.user.js) |
+| **YouTube — Nav shortcuts (next + previous)** | youtube.com | Combined: press N to jump to the next video, P to the previous. Both keys are remappable via the Tampermonkey menu. | [install](https://raw.githubusercontent.com/chirag127/userscripts-script/main/scripts/youtube-nav-shortcuts.user.js) |
+| **YouTube — Next video (N)** | youtube.com | Press N to jump to the next video. Atomic — does one thing only. | [install](https://raw.githubusercontent.com/chirag127/userscripts-script/main/scripts/youtube-next-video-shortcut.user.js) |
+| **YouTube — No autoplay + no end cards** | youtube.com | Kills autoplay, hides end-card overlays, and auto-dismisses the "Video paused. Continue watching?" modal. Stops YouTube from stealing your next hour. | [install](https://raw.githubusercontent.com/chirag127/userscripts-script/main/scripts/youtube-no-autoplay.user.js) |
+| **YouTube — Previous video (P)** | youtube.com | Press P to jump to the previous video. Atomic — does one thing only. | [install](https://raw.githubusercontent.com/chirag127/userscripts-script/main/scripts/youtube-prev-video-shortcut.user.js) |
+| **YouTube — Reaction shortcuts (like + dislike)** | youtube.com | Combined: press S to like, D to dislike the current video. Both keys are remappable via the Tampermonkey menu. | [install](https://raw.githubusercontent.com/chirag127/userscripts-script/main/scripts/youtube-reaction-shortcuts.user.js) |
 
 ## License
 
-MIT.
+MIT. See [LICENSE](./LICENSE).
