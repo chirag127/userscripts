@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Auto-reject cookie banners
-// @namespace    https://github.com/chirag127/userscripts-script
+// @namespace    https://github.com/chirag127/userscripts
 // @version      0.1.0
 // @description  Auto-click the "reject all" button on cookie consent banners (OneTrust, Cookiebot, TrustArc, Osano, Didomi + generic fallbacks). Why: opt-out is the sane default; manual clicks per site are noise.
 // @author       chirag127
@@ -10,10 +10,10 @@
 // @grant        GM_getValue
 // @grant        GM_setValue
 // @license      MIT
-// @homepageURL  https://github.com/chirag127/userscripts-script/blob/main/scripts/auto-reject-cookies.user.js
-// @supportURL   https://github.com/chirag127/userscripts-script/issues
-// @updateURL    https://raw.githubusercontent.com/chirag127/userscripts-script/main/scripts/auto-reject-cookies.user.js
-// @downloadURL  https://raw.githubusercontent.com/chirag127/userscripts-script/main/scripts/auto-reject-cookies.user.js
+// @homepageURL  https://github.com/chirag127/userscripts/blob/main/scripts/auto-reject-cookies.user.js
+// @supportURL   https://github.com/chirag127/userscripts/issues
+// @updateURL    https://raw.githubusercontent.com/chirag127/userscripts/main/scripts/auto-reject-cookies.user.js
+// @downloadURL  https://raw.githubusercontent.com/chirag127/userscripts/main/scripts/auto-reject-cookies.user.js
 // ==/UserScript==
 
 /*
@@ -21,13 +21,13 @@ README (folded from auto-reject-cookies/README.md during flat-restructure 2026-0
 
 # auto-reject-cookies
 
-[⭐ Star this Repo ⭐](https://github.com/chirag127/userscripts-script)
+[⭐ Star this Repo ⭐](https://github.com/chirag127/userscripts)
 
 Auto-clicks the "reject all" button on cookie consent banners so you don't have to. Covers the major CMPs (OneTrust, Cookiebot, TrustArc, Osano, Didomi) plus generic `aria-label` and text-content fallbacks for the long tail.
 
 ## Install
 
-[Click here to install in Tampermonkey / Violentmonkey / ScriptCat](https://raw.githubusercontent.com/chirag127/userscripts-script/main/scripts/auto-reject-cookies.user.js)
+[Click here to install in Tampermonkey / Violentmonkey / ScriptCat](https://raw.githubusercontent.com/chirag127/userscripts/main/scripts/auto-reject-cookies.user.js)
 
 Auto-updates on every push via the `@updateURL` metadata.
 

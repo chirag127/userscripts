@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Preview shortlinks on hover
-// @namespace    https://github.com/chirag127/userscripts-script
+// @namespace    https://github.com/chirag127/userscripts
 // @version      0.1.0
 // @description  Hover a bit.ly / t.co / tinyurl / etc. link and see the resolved destination in a tooltip before clicking. Avoids opening blind shorteners that may point to malware or trackers.
 // @author       chirag127
@@ -12,10 +12,10 @@
 // @grant        GM_registerMenuCommand
 // @connect      *
 // @license      MIT
-// @homepageURL  https://github.com/chirag127/userscripts-script/blob/main/scripts/expand-shortlinks.user.js
-// @supportURL   https://github.com/chirag127/userscripts-script/issues
-// @updateURL    https://raw.githubusercontent.com/chirag127/userscripts-script/main/scripts/expand-shortlinks.user.js
-// @downloadURL  https://raw.githubusercontent.com/chirag127/userscripts-script/main/scripts/expand-shortlinks.user.js
+// @homepageURL  https://github.com/chirag127/userscripts/blob/main/scripts/expand-shortlinks.user.js
+// @supportURL   https://github.com/chirag127/userscripts/issues
+// @updateURL    https://raw.githubusercontent.com/chirag127/userscripts/main/scripts/expand-shortlinks.user.js
+// @downloadURL  https://raw.githubusercontent.com/chirag127/userscripts/main/scripts/expand-shortlinks.user.js
 // ==/UserScript==
 
 /*
@@ -23,13 +23,13 @@ README (folded from expand-shortlinks/README.md during flat-restructure 2026-07-
 
 # expand-shortlinks
 
-[⭐ Star this Repo ⭐](https://github.com/chirag127/userscripts-script)
+[⭐ Star this Repo ⭐](https://github.com/chirag127/userscripts)
 
 Hover any `bit.ly` / `t.co` / `tinyurl.com` / etc. link and a tooltip shows where it actually points — before you click. No more blind trust in shorteners.
 
 ## Install
 
-[Click here to install in Tampermonkey / Violentmonkey / ScriptCat](https://raw.githubusercontent.com/chirag127/userscripts-script/main/scripts/expand-shortlinks.user.js)
+[Click here to install in Tampermonkey / Violentmonkey / ScriptCat](https://raw.githubusercontent.com/chirag127/userscripts/main/scripts/expand-shortlinks.user.js)
 
 Auto-updates via the `@updateURL` metadata.
 

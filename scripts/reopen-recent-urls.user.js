@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Reopen recent URLs (cross-tab history)
-// @namespace    https://github.com/chirag127/userscripts-script
+// @namespace    https://github.com/chirag127/userscripts
 // @version      0.1.0
 // @description  Keep a rolling ring-buffer of the last 30 URLs you closed across all tabs. Menu command opens an overlay listing them; click any to reopen in a new tab. Survives tab-close and browser restart via GM_setValue.
 // @author       chirag127
@@ -11,10 +11,10 @@
 // @grant        GM_registerMenuCommand
 // @grant        GM_openInTab
 // @license      MIT
-// @homepageURL  https://github.com/chirag127/userscripts-script/blob/main/scripts/reopen-recent-urls.user.js
-// @supportURL   https://github.com/chirag127/userscripts-script/issues
-// @updateURL    https://raw.githubusercontent.com/chirag127/userscripts-script/main/scripts/reopen-recent-urls.user.js
-// @downloadURL  https://raw.githubusercontent.com/chirag127/userscripts-script/main/scripts/reopen-recent-urls.user.js
+// @homepageURL  https://github.com/chirag127/userscripts/blob/main/scripts/reopen-recent-urls.user.js
+// @supportURL   https://github.com/chirag127/userscripts/issues
+// @updateURL    https://raw.githubusercontent.com/chirag127/userscripts/main/scripts/reopen-recent-urls.user.js
+// @downloadURL  https://raw.githubusercontent.com/chirag127/userscripts/main/scripts/reopen-recent-urls.user.js
 // ==/UserScript==
 
 /*
@@ -22,13 +22,13 @@ README (folded from reopen-recent-urls/README.md during flat-restructure 2026-07
 
 # reopen-recent-urls
 
-[⭐ Star this Repo ⭐](https://github.com/chirag127/userscripts-script)
+[⭐ Star this Repo ⭐](https://github.com/chirag127/userscripts)
 
 Keeps a rolling ring-buffer of the last 30 URLs you closed across all tabs. Open the menu to see the list; click any entry to reopen it in a new tab. Survives browser restart via `GM_setValue`.
 
 ## Install
 
-[Click here to install in Tampermonkey / Violentmonkey / ScriptCat](https://raw.githubusercontent.com/chirag127/userscripts-script/main/scripts/reopen-recent-urls.user.js)
+[Click here to install in Tampermonkey / Violentmonkey / ScriptCat](https://raw.githubusercontent.com/chirag127/userscripts/main/scripts/reopen-recent-urls.user.js)
 
 Auto-updates on every push via the `@updateURL` metadata.
 

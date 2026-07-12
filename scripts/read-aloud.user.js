@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Read Aloud
-// @namespace    https://github.com/chirag127/userscripts-script
+// @namespace    https://github.com/chirag127/userscripts
 // @version      0.1.0
 // @description  Read the selected text (or the whole article) aloud using the browser's built-in speech synthesis. Hotkey Alt+R to start/stop, Alt+. to pause/resume. Replaces the "Read Aloud" Chrome extension for basic TTS.
 // @author       chirag127
@@ -10,10 +10,10 @@
 // @grant        GM_getValue
 // @grant        GM_setValue
 // @license      MIT
-// @homepageURL  https://github.com/chirag127/userscripts-script/blob/main/scripts/read-aloud.user.js
-// @supportURL   https://github.com/chirag127/userscripts-script/issues
-// @updateURL    https://raw.githubusercontent.com/chirag127/userscripts-script/main/scripts/read-aloud.user.js
-// @downloadURL  https://raw.githubusercontent.com/chirag127/userscripts-script/main/scripts/read-aloud.user.js
+// @homepageURL  https://github.com/chirag127/userscripts/blob/main/scripts/read-aloud.user.js
+// @supportURL   https://github.com/chirag127/userscripts/issues
+// @updateURL    https://raw.githubusercontent.com/chirag127/userscripts/main/scripts/read-aloud.user.js
+// @downloadURL  https://raw.githubusercontent.com/chirag127/userscripts/main/scripts/read-aloud.user.js
 // ==/UserScript==
 
 /*

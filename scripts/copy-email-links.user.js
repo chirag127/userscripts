@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Copy email links
-// @namespace    https://github.com/chirag127/userscripts-script
+// @namespace    https://github.com/chirag127/userscripts
 // @version      0.1.3
 // @description  When you click a mailto: link, copy the email address to your clipboard instead of opening the OS mail client. Toast confirms the copy. Replaces the closed-source "Copy email links" Chrome extension (ocffkcplakjlhbaadfcokiiflaelnaib).
 // @author       chirag127
@@ -10,10 +10,10 @@
 // @grant        GM_getValue
 // @grant        GM_setValue
 // @license      MIT
-// @homepageURL  https://github.com/chirag127/userscripts-script/blob/main/scripts/copy-email-links.user.js
-// @supportURL   https://github.com/chirag127/userscripts-script/issues
-// @updateURL    https://raw.githubusercontent.com/chirag127/userscripts-script/main/scripts/copy-email-links.user.js
-// @downloadURL  https://raw.githubusercontent.com/chirag127/userscripts-script/main/scripts/copy-email-links.user.js
+// @homepageURL  https://github.com/chirag127/userscripts/blob/main/scripts/copy-email-links.user.js
+// @supportURL   https://github.com/chirag127/userscripts/issues
+// @updateURL    https://raw.githubusercontent.com/chirag127/userscripts/main/scripts/copy-email-links.user.js
+// @downloadURL  https://raw.githubusercontent.com/chirag127/userscripts/main/scripts/copy-email-links.user.js
 // ==/UserScript==
 
 /*
@@ -21,7 +21,7 @@ README (folded from copy-email-links/README.md during flat-restructure 2026-07-1
 
 # copy-email-links
 
-[⭐ Star this Repo ⭐](https://github.com/chirag127/userscripts-script)
+[⭐ Star this Repo ⭐](https://github.com/chirag127/userscripts)
 
 When you click a `mailto:` link, the email address is copied to your clipboard instead of opening your OS mail client. Toast confirms the copy.
 
@@ -29,7 +29,7 @@ When you click a `mailto:` link, the email address is copied to your clipboard i
 
 ## Install
 
-[Click here to install in Tampermonkey / Violentmonkey / ScriptCat](https://raw.githubusercontent.com/chirag127/userscripts-script/main/scripts/copy-email-links.user.js)
+[Click here to install in Tampermonkey / Violentmonkey / ScriptCat](https://raw.githubusercontent.com/chirag127/userscripts/main/scripts/copy-email-links.user.js)
 
 Auto-updates on every push via the `@updateURL` metadata.
 

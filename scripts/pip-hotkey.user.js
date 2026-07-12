@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Picture-in-Picture Hotkey
-// @namespace    https://github.com/chirag127/userscripts-script
+// @namespace    https://github.com/chirag127/userscripts
 // @version      0.1.0
 // @description  Toggle Picture-in-Picture on the largest/active <video> with a hotkey (Alt+P) or the userscript menu. Replaces Google's "Picture-in-Picture Extension".
 // @author       chirag127
@@ -8,10 +8,10 @@
 // @run-at       document-idle
 // @grant        GM_registerMenuCommand
 // @license      MIT
-// @homepageURL  https://github.com/chirag127/userscripts-script/blob/main/scripts/pip-hotkey.user.js
-// @supportURL   https://github.com/chirag127/userscripts-script/issues
-// @updateURL    https://raw.githubusercontent.com/chirag127/userscripts-script/main/scripts/pip-hotkey.user.js
-// @downloadURL  https://raw.githubusercontent.com/chirag127/userscripts-script/main/scripts/pip-hotkey.user.js
+// @homepageURL  https://github.com/chirag127/userscripts/blob/main/scripts/pip-hotkey.user.js
+// @supportURL   https://github.com/chirag127/userscripts/issues
+// @updateURL    https://raw.githubusercontent.com/chirag127/userscripts/main/scripts/pip-hotkey.user.js
+// @downloadURL  https://raw.githubusercontent.com/chirag127/userscripts/main/scripts/pip-hotkey.user.js
 // ==/UserScript==
 
 /*

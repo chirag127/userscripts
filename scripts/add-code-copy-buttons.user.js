@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Add copy buttons to <pre><code> blocks
-// @namespace    https://github.com/chirag127/userscripts-script
+// @namespace    https://github.com/chirag127/userscripts
 // @version      0.1.0
 // @description  Inject a small "copy" button on every code block so you can grab the snippet without hand-selecting. One click copies innerText; button flashes "copied" for 1s.
 // @author       chirag127
@@ -11,10 +11,10 @@
 // @grant        GM_getValue
 // @grant        GM_setValue
 // @license      MIT
-// @homepageURL  https://github.com/chirag127/userscripts-script/blob/main/scripts/add-code-copy-buttons.user.js
-// @supportURL   https://github.com/chirag127/userscripts-script/issues
-// @updateURL    https://raw.githubusercontent.com/chirag127/userscripts-script/main/scripts/add-code-copy-buttons.user.js
-// @downloadURL  https://raw.githubusercontent.com/chirag127/userscripts-script/main/scripts/add-code-copy-buttons.user.js
+// @homepageURL  https://github.com/chirag127/userscripts/blob/main/scripts/add-code-copy-buttons.user.js
+// @supportURL   https://github.com/chirag127/userscripts/issues
+// @updateURL    https://raw.githubusercontent.com/chirag127/userscripts/main/scripts/add-code-copy-buttons.user.js
+// @downloadURL  https://raw.githubusercontent.com/chirag127/userscripts/main/scripts/add-code-copy-buttons.user.js
 // ==/UserScript==
 
 /*
@@ -22,13 +22,13 @@ README (folded from add-code-copy-buttons/README.md during flat-restructure 2026
 
 # add-code-copy-buttons
 
-[⭐ Star this Repo ⭐](https://github.com/chirag127/userscripts-script)
+[⭐ Star this Repo ⭐](https://github.com/chirag127/userscripts)
 
 Injects a small "copy" button on every `<pre><code>` block so you can grab a snippet without hand-selecting. One click copies the code; the button flashes "copied" for a second.
 
 ## Install
 
-[Click here to install in Tampermonkey / Violentmonkey / ScriptCat](https://raw.githubusercontent.com/chirag127/userscripts-script/main/scripts/add-code-copy-buttons.user.js)
+[Click here to install in Tampermonkey / Violentmonkey / ScriptCat](https://raw.githubusercontent.com/chirag127/userscripts/main/scripts/add-code-copy-buttons.user.js)
 
 Auto-updates on every push via the `@updateURL` metadata.
 

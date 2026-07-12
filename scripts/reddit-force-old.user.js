@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Force old.reddit.com
-// @namespace    https://github.com/chirag127/userscripts-script
+// @namespace    https://github.com/chirag127/userscripts
 // @version      0.1.0
 // @description  Redirect new Reddit (www/sh/bare) to old.reddit.com. Old UI loads faster, no infinite-scroll, saner comment threading.
 // @author       chirag127
@@ -12,10 +12,10 @@
 // @grant        GM_setValue
 // @grant        GM_getValue
 // @license      MIT
-// @homepageURL  https://github.com/chirag127/userscripts-script/blob/main/scripts/reddit-force-old.user.js
-// @supportURL   https://github.com/chirag127/userscripts-script/issues
-// @updateURL    https://raw.githubusercontent.com/chirag127/userscripts-script/main/scripts/reddit-force-old.user.js
-// @downloadURL  https://raw.githubusercontent.com/chirag127/userscripts-script/main/scripts/reddit-force-old.user.js
+// @homepageURL  https://github.com/chirag127/userscripts/blob/main/scripts/reddit-force-old.user.js
+// @supportURL   https://github.com/chirag127/userscripts/issues
+// @updateURL    https://raw.githubusercontent.com/chirag127/userscripts/main/scripts/reddit-force-old.user.js
+// @downloadURL  https://raw.githubusercontent.com/chirag127/userscripts/main/scripts/reddit-force-old.user.js
 // ==/UserScript==
 
 /*
@@ -28,7 +28,7 @@ Userscript that redirects new Reddit (`www.reddit.com`, `sh.reddit.com`, bare `r
 ## Install
 
 1. Install [Tampermonkey](https://www.tampermonkey.net/) (or Violentmonkey / ScriptCat).
-2. Click → **[install](https://github.com/chirag127/userscripts-script/raw/main/scripts/reddit-force-old.user.js)**
+2. Click → **[install](https://github.com/chirag127/userscripts/raw/main/scripts/reddit-force-old.user.js)**
 
 ## How it works
 

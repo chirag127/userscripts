@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Link Klipper (userscript)
-// @namespace    https://github.com/chirag127/userscripts-script
+// @namespace    https://github.com/chirag127/userscripts
 // @version      0.1.3
 // @description  Extract every link on the current page and export as CSV download or plain-text clipboard. Captures <a href> + <img src>. Userscript replacement for the "Link Klipper" Chrome extension by Codebox.in.
 // @author       chirag127
@@ -10,10 +10,10 @@
 // @grant        GM_setClipboard
 // @grant        GM_download
 // @license      MIT
-// @homepageURL  https://github.com/chirag127/userscripts-script/blob/main/scripts/link-klipper.user.js
-// @supportURL   https://github.com/chirag127/userscripts-script/issues
-// @updateURL    https://raw.githubusercontent.com/chirag127/userscripts-script/main/scripts/link-klipper.user.js
-// @downloadURL  https://raw.githubusercontent.com/chirag127/userscripts-script/main/scripts/link-klipper.user.js
+// @homepageURL  https://github.com/chirag127/userscripts/blob/main/scripts/link-klipper.user.js
+// @supportURL   https://github.com/chirag127/userscripts/issues
+// @updateURL    https://raw.githubusercontent.com/chirag127/userscripts/main/scripts/link-klipper.user.js
+// @downloadURL  https://raw.githubusercontent.com/chirag127/userscripts/main/scripts/link-klipper.user.js
 // ==/UserScript==
 
 /*
@@ -21,7 +21,7 @@ README (folded from link-klipper/README.md during flat-restructure 2026-07-12)
 
 # link-klipper
 
-[⭐ Star this Repo ⭐](https://github.com/chirag127/userscripts-script)
+[⭐ Star this Repo ⭐](https://github.com/chirag127/userscripts)
 
 Extract every link on the current page → download as CSV or copy URLs to clipboard. Captures both `<a href>` anchors and `<img src>` images.
 
@@ -29,7 +29,7 @@ Extract every link on the current page → download as CSV or copy URLs to clipb
 
 ## Install
 
-[Click here to install in Tampermonkey / Violentmonkey / ScriptCat](https://raw.githubusercontent.com/chirag127/userscripts-script/main/scripts/link-klipper.user.js)
+[Click here to install in Tampermonkey / Violentmonkey / ScriptCat](https://raw.githubusercontent.com/chirag127/userscripts/main/scripts/link-klipper.user.js)
 
 Auto-updates on every push via the `@updateURL` metadata.
 

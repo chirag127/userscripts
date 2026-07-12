@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         YouTube — Hide Shorts everywhere
-// @namespace    https://github.com/chirag127/userscripts-script
+// @namespace    https://github.com/chirag127/userscripts
 // @version      0.1.0
 // @description  Hides Shorts shelves + sidebar entry, and redirects /shorts/<id> to /watch?v=<id> so Shorts play as regular videos.
 // @author       chirag127
@@ -12,10 +12,10 @@
 // @grant        GM_getValue
 // @grant        GM_setValue
 // @license      MIT
-// @homepageURL  https://github.com/chirag127/userscripts-script/blob/main/scripts/youtube-hide-shorts.user.js
-// @supportURL   https://github.com/chirag127/userscripts-script/issues
-// @updateURL    https://raw.githubusercontent.com/chirag127/userscripts-script/main/scripts/youtube-hide-shorts.user.js
-// @downloadURL  https://raw.githubusercontent.com/chirag127/userscripts-script/main/scripts/youtube-hide-shorts.user.js
+// @homepageURL  https://github.com/chirag127/userscripts/blob/main/scripts/youtube-hide-shorts.user.js
+// @supportURL   https://github.com/chirag127/userscripts/issues
+// @updateURL    https://raw.githubusercontent.com/chirag127/userscripts/main/scripts/youtube-hide-shorts.user.js
+// @downloadURL  https://raw.githubusercontent.com/chirag127/userscripts/main/scripts/youtube-hide-shorts.user.js
 // ==/UserScript==
 
 /*
@@ -32,7 +32,7 @@ Kills Shorts across YouTube:
 
 ## Install
 
-[![Install](https://img.shields.io/badge/install-userscript-blue)](https://github.com/chirag127/userscripts-script/raw/main/scripts/youtube-hide-shorts.user.js)
+[![Install](https://img.shields.io/badge/install-userscript-blue)](https://github.com/chirag127/userscripts/raw/main/scripts/youtube-hide-shorts.user.js)
 
 Requires Tampermonkey, Violentmonkey, or Userscripts (Safari).
 

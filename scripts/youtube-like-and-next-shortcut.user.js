@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         YouTube — Like & next (A)
-// @namespace    https://github.com/chirag127/userscripts-script
+// @namespace    https://github.com/chirag127/userscripts
 // @version      0.1.0
 // @description  Press A to like the current video AND immediately skip to the next one. Key is remappable via the Tampermonkey menu.
 // @author       chirag127
@@ -11,10 +11,10 @@
 // @grant        GM_setValue
 // @grant        GM_registerMenuCommand
 // @license      MIT
-// @homepageURL  https://github.com/chirag127/userscripts-script/blob/main/scripts/youtube-like-and-next-shortcut.user.js
-// @supportURL   https://github.com/chirag127/userscripts-script/issues
-// @updateURL    https://raw.githubusercontent.com/chirag127/userscripts-script/main/scripts/youtube-like-and-next-shortcut.user.js
-// @downloadURL  https://raw.githubusercontent.com/chirag127/userscripts-script/main/scripts/youtube-like-and-next-shortcut.user.js
+// @homepageURL  https://github.com/chirag127/userscripts/blob/main/scripts/youtube-like-and-next-shortcut.user.js
+// @supportURL   https://github.com/chirag127/userscripts/issues
+// @updateURL    https://raw.githubusercontent.com/chirag127/userscripts/main/scripts/youtube-like-and-next-shortcut.user.js
+// @downloadURL  https://raw.githubusercontent.com/chirag127/userscripts/main/scripts/youtube-like-and-next-shortcut.user.js
 // ==/UserScript==
 
 /*
@@ -28,7 +28,7 @@ Default key: **A**. Remappable.
 
 ## Install
 
-[![Install](https://img.shields.io/badge/install-userscript-blue)](https://github.com/chirag127/userscripts-script/raw/main/scripts/youtube-like-and-next-shortcut.user.js)
+[![Install](https://img.shields.io/badge/install-userscript-blue)](https://github.com/chirag127/userscripts/raw/main/scripts/youtube-like-and-next-shortcut.user.js)
 
 Requires Tampermonkey, Violentmonkey, or Userscripts (Safari).
 

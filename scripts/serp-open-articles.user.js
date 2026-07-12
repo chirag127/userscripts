@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         SERP: open all article results
-// @namespace    https://github.com/chirag127/userscripts-script
+// @namespace    https://github.com/chirag127/userscripts
 // @version      0.1.3
 // @description  Add a button to search engine result pages that opens all article-type results in new tabs. Skips videos, social, shopping, maps. Deduplicates by URL. Caps at 10 tabs by default with a confirmation dialog above 5.
 // @author       chirag127
@@ -15,10 +15,10 @@
 // @grant        GM_setValue
 // @grant        GM_getValue
 // @license      MIT
-// @homepageURL  https://github.com/chirag127/userscripts-script/blob/main/scripts/serp-open-articles.user.js
-// @supportURL   https://github.com/chirag127/userscripts-script/issues
-// @updateURL    https://raw.githubusercontent.com/chirag127/userscripts-script/main/scripts/serp-open-articles.user.js
-// @downloadURL  https://raw.githubusercontent.com/chirag127/userscripts-script/main/scripts/serp-open-articles.user.js
+// @homepageURL  https://github.com/chirag127/userscripts/blob/main/scripts/serp-open-articles.user.js
+// @supportURL   https://github.com/chirag127/userscripts/issues
+// @updateURL    https://raw.githubusercontent.com/chirag127/userscripts/main/scripts/serp-open-articles.user.js
+// @downloadURL  https://raw.githubusercontent.com/chirag127/userscripts/main/scripts/serp-open-articles.user.js
 // ==/UserScript==
 
 /*
@@ -54,7 +54,7 @@ The script also de-duplicates by host + path so cached/AMP copies of the same ar
 ## Install
 
 1. Install [Tampermonkey](https://www.tampermonkey.net/) (or Violentmonkey / ScriptCat).
-2. Click → **[install](https://github.com/chirag127/userscripts-script/raw/main/scripts/serp-open-articles.user.js)**
+2. Click → **[install](https://github.com/chirag127/userscripts/raw/main/scripts/serp-open-articles.user.js)**
 
 ## Use
 

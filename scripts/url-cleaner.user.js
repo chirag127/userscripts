@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Strip URL tracking params
-// @namespace    https://github.com/chirag127/userscripts-script
+// @namespace    https://github.com/chirag127/userscripts
 // @version      0.1.0
 // @description  Strip utm_*, fbclid, gclid, mc_eid, msclkid etc. from the address bar on load and from URLs copied to clipboard. No more tracking-tagged links pasted into chats.
 // @author       chirag127
@@ -10,10 +10,10 @@
 // @grant        GM_getValue
 // @grant        GM_setValue
 // @license      MIT
-// @homepageURL  https://github.com/chirag127/userscripts-script/blob/main/scripts/url-cleaner.user.js
-// @supportURL   https://github.com/chirag127/userscripts-script/issues
-// @updateURL    https://raw.githubusercontent.com/chirag127/userscripts-script/main/scripts/url-cleaner.user.js
-// @downloadURL  https://raw.githubusercontent.com/chirag127/userscripts-script/main/scripts/url-cleaner.user.js
+// @homepageURL  https://github.com/chirag127/userscripts/blob/main/scripts/url-cleaner.user.js
+// @supportURL   https://github.com/chirag127/userscripts/issues
+// @updateURL    https://raw.githubusercontent.com/chirag127/userscripts/main/scripts/url-cleaner.user.js
+// @downloadURL  https://raw.githubusercontent.com/chirag127/userscripts/main/scripts/url-cleaner.user.js
 // ==/UserScript==
 
 /*
@@ -21,7 +21,7 @@ README (folded from url-cleaner/README.md during flat-restructure 2026-07-12)
 
 # url-cleaner
 
-[⭐ Star this Repo ⭐](https://github.com/chirag127/userscripts-script)
+[⭐ Star this Repo ⭐](https://github.com/chirag127/userscripts)
 
 Strips tracking params (`utm_*`, `fbclid`, `gclid`, `mc_eid`, `msclkid`, `igshid`, `si`, …) from URLs on two fronts:
 
@@ -30,7 +30,7 @@ Strips tracking params (`utm_*`, `fbclid`, `gclid`, `mc_eid`, `msclkid`, `igshid
 
 ## Install
 
-[Click here to install in Tampermonkey / Violentmonkey / ScriptCat](https://raw.githubusercontent.com/chirag127/userscripts-script/main/scripts/url-cleaner.user.js)
+[Click here to install in Tampermonkey / Violentmonkey / ScriptCat](https://raw.githubusercontent.com/chirag127/userscripts/main/scripts/url-cleaner.user.js)
 
 Auto-updates on every push via `@updateURL`.
 

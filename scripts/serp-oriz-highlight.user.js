@@ -1,14 +1,14 @@
 // ==UserScript==
 // @name         SERP: highlight oriz-recommended sites
-// @namespace    https://github.com/chirag127/userscripts-script
+// @namespace    https://github.com/chirag127/userscripts
 // @version      0.1.0
 // @description  Adds a small gold star to search-result rows on Google, DuckDuckGo, and Bing when the hostname appears in Chirag's curated 2026 links directory at links.oriz.in. Hover shows why the site is recommended, its tier (free/signup/freemium), and whether it matches our stack.
 // @author       chirag127
 // @license      MIT
-// @homepageURL  https://github.com/chirag127/userscripts-script/blob/main/scripts/serp-oriz-highlight.user.js
-// @supportURL   https://github.com/chirag127/userscripts-script/issues
-// @downloadURL  https://raw.githubusercontent.com/chirag127/userscripts-script/main/scripts/serp-oriz-highlight.user.js
-// @updateURL    https://raw.githubusercontent.com/chirag127/userscripts-script/main/scripts/serp-oriz-highlight.user.js
+// @homepageURL  https://github.com/chirag127/userscripts/blob/main/scripts/serp-oriz-highlight.user.js
+// @supportURL   https://github.com/chirag127/userscripts/issues
+// @downloadURL  https://raw.githubusercontent.com/chirag127/userscripts/main/scripts/serp-oriz-highlight.user.js
+// @updateURL    https://raw.githubusercontent.com/chirag127/userscripts/main/scripts/serp-oriz-highlight.user.js
 // @match        https://www.google.com/search*
 // @match        https://www.google.co.in/search*
 // @match        https://duckduckgo.com/*
@@ -74,7 +74,7 @@ The JSON is a flat list produced by the [`chirag127/links-site`](https://github.
 
 ## License
 
-MIT — [`chirag127/userscripts-script`](https://github.com/chirag127/userscripts-script) monorepo license.
+MIT — [`chirag127/userscripts`](https://github.com/chirag127/userscripts) monorepo license.
 */
 
 /* eslint-disable no-undef */

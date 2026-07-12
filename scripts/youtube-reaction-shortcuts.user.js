@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         YouTube — Reaction shortcuts (like + dislike)
-// @namespace    https://github.com/chirag127/userscripts-script
+// @namespace    https://github.com/chirag127/userscripts
 // @version      0.1.3
 // @description  Combined: press S to like, D to dislike the current video. Both keys are remappable via the Tampermonkey menu.
 // @author       chirag127
@@ -11,10 +11,10 @@
 // @grant        GM_setValue
 // @grant        GM_registerMenuCommand
 // @license      MIT
-// @homepageURL  https://github.com/chirag127/userscripts-script/blob/main/scripts/youtube-reaction-shortcuts.user.js
-// @supportURL   https://github.com/chirag127/userscripts-script/issues
-// @updateURL    https://raw.githubusercontent.com/chirag127/userscripts-script/main/scripts/youtube-reaction-shortcuts.user.js
-// @downloadURL  https://raw.githubusercontent.com/chirag127/userscripts-script/main/scripts/youtube-reaction-shortcuts.user.js
+// @homepageURL  https://github.com/chirag127/userscripts/blob/main/scripts/youtube-reaction-shortcuts.user.js
+// @supportURL   https://github.com/chirag127/userscripts/issues
+// @updateURL    https://raw.githubusercontent.com/chirag127/userscripts/main/scripts/youtube-reaction-shortcuts.user.js
+// @downloadURL  https://raw.githubusercontent.com/chirag127/userscripts/main/scripts/youtube-reaction-shortcuts.user.js
 // ==/UserScript==
 
 /*
@@ -33,7 +33,7 @@ Both keys are remappable via the userscript menu.
 
 ## Install
 
-[![Install](https://img.shields.io/badge/install-userscript-blue)](https://raw.githubusercontent.com/chirag127/userscripts-script/main/scripts/youtube-reaction-shortcuts.user.js)
+[![Install](https://img.shields.io/badge/install-userscript-blue)](https://raw.githubusercontent.com/chirag127/userscripts/main/scripts/youtube-reaction-shortcuts.user.js)
 
 Requires Tampermonkey, Violentmonkey, or Userscripts (Safari).
 

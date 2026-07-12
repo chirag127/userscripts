@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Per-domain persistent scratchpad
-// @namespace    https://github.com/chirag127/userscripts-script
+// @namespace    https://github.com/chirag127/userscripts
 // @version      0.1.0
 // @description  Fixed-position textarea per hostname. Notes persist across page loads via GM storage. Toggle from menu, Esc to close. Useful for jotting selectors, TODOs, or credentials-in-progress without a second tab.
 // @author       chirag127
@@ -10,10 +10,10 @@
 // @grant        GM_setValue
 // @grant        GM_registerMenuCommand
 // @license      MIT
-// @homepageURL  https://github.com/chirag127/userscripts-script/blob/main/scripts/per-site-scratchpad.user.js
-// @supportURL   https://github.com/chirag127/userscripts-script/issues
-// @updateURL    https://raw.githubusercontent.com/chirag127/userscripts-script/main/scripts/per-site-scratchpad.user.js
-// @downloadURL  https://raw.githubusercontent.com/chirag127/userscripts-script/main/scripts/per-site-scratchpad.user.js
+// @homepageURL  https://github.com/chirag127/userscripts/blob/main/scripts/per-site-scratchpad.user.js
+// @supportURL   https://github.com/chirag127/userscripts/issues
+// @updateURL    https://raw.githubusercontent.com/chirag127/userscripts/main/scripts/per-site-scratchpad.user.js
+// @downloadURL  https://raw.githubusercontent.com/chirag127/userscripts/main/scripts/per-site-scratchpad.user.js
 // ==/UserScript==
 
 /*
@@ -21,13 +21,13 @@ README (folded from per-site-scratchpad/README.md during flat-restructure 2026-0
 
 # per-site-scratchpad
 
-[⭐ Star this Repo ⭐](https://github.com/chirag127/userscripts-script)
+[⭐ Star this Repo ⭐](https://github.com/chirag127/userscripts)
 
 A fixed-position textarea, one per hostname, persisted across page loads. Jot selectors, TODOs, form values, or credentials-in-progress without opening a second tab.
 
 ## Install
 
-[Click here to install in Tampermonkey / Violentmonkey / ScriptCat](https://raw.githubusercontent.com/chirag127/userscripts-script/main/scripts/per-site-scratchpad.user.js)
+[Click here to install in Tampermonkey / Violentmonkey / ScriptCat](https://raw.githubusercontent.com/chirag127/userscripts/main/scripts/per-site-scratchpad.user.js)
 
 Auto-updates on every push via the `@updateURL` metadata.
 

@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Open all links in selection
-// @namespace    https://github.com/chirag127/userscripts-script
+// @namespace    https://github.com/chirag127/userscripts
 // @version      0.1.3
 // @description  Tampermonkey menu command — opens every link found in the current text selection in new tabs. Catches both <a href> elements AND plain-text URLs (http://, https://, www.).
 // @author       chirag127
@@ -8,10 +8,10 @@
 // @run-at       document-end
 // @grant        GM_registerMenuCommand
 // @license      MIT
-// @homepageURL  https://github.com/chirag127/userscripts-script/blob/main/scripts/open-links-in-selection.user.js
-// @supportURL   https://github.com/chirag127/userscripts-script/issues
-// @updateURL    https://raw.githubusercontent.com/chirag127/userscripts-script/main/scripts/open-links-in-selection.user.js
-// @downloadURL  https://raw.githubusercontent.com/chirag127/userscripts-script/main/scripts/open-links-in-selection.user.js
+// @homepageURL  https://github.com/chirag127/userscripts/blob/main/scripts/open-links-in-selection.user.js
+// @supportURL   https://github.com/chirag127/userscripts/issues
+// @updateURL    https://raw.githubusercontent.com/chirag127/userscripts/main/scripts/open-links-in-selection.user.js
+// @downloadURL  https://raw.githubusercontent.com/chirag127/userscripts/main/scripts/open-links-in-selection.user.js
 // ==/UserScript==
 
 /*
@@ -31,7 +31,7 @@ Skips: `javascript:`, `mailto:`, `tel:`, and hash-only anchors.
 ## Install
 
 1. Install [Tampermonkey](https://www.tampermonkey.net/) (or Violentmonkey / ScriptCat).
-2. Click → **[install](https://raw.githubusercontent.com/chirag127/userscripts-script/main/scripts/open-links-in-selection.user.js)**
+2. Click → **[install](https://raw.githubusercontent.com/chirag127/userscripts/main/scripts/open-links-in-selection.user.js)**
 
 ## Use
 

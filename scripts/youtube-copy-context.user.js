@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         YouTube — Copy Title + Channel + URL as markdown
-// @namespace    https://github.com/chirag127/userscripts-script
+// @namespace    https://github.com/chirag127/userscripts
 // @version      0.1.0
 // @description  Ctrl+Shift+Y copies the current video as a markdown link with title, channel, and a timestamped URL. Shortcut remappable via menu.
 // @author       chirag127
@@ -12,10 +12,10 @@
 // @grant        GM_setValue
 // @grant        GM_registerMenuCommand
 // @license      MIT
-// @homepageURL  https://github.com/chirag127/userscripts-script/blob/main/scripts/youtube-copy-context.user.js
-// @supportURL   https://github.com/chirag127/userscripts-script/issues
-// @updateURL    https://raw.githubusercontent.com/chirag127/userscripts-script/main/scripts/youtube-copy-context.user.js
-// @downloadURL  https://raw.githubusercontent.com/chirag127/userscripts-script/main/scripts/youtube-copy-context.user.js
+// @homepageURL  https://github.com/chirag127/userscripts/blob/main/scripts/youtube-copy-context.user.js
+// @supportURL   https://github.com/chirag127/userscripts/issues
+// @updateURL    https://raw.githubusercontent.com/chirag127/userscripts/main/scripts/youtube-copy-context.user.js
+// @downloadURL  https://raw.githubusercontent.com/chirag127/userscripts/main/scripts/youtube-copy-context.user.js
 // ==/UserScript==
 
 /*
@@ -33,7 +33,7 @@ The `t=` parameter is the current playhead position, so pasted links jump to whe
 
 ## Install
 
-[![Install](https://img.shields.io/badge/install-userscript-blue)](https://github.com/chirag127/userscripts-script/raw/main/scripts/youtube-copy-context.user.js)
+[![Install](https://img.shields.io/badge/install-userscript-blue)](https://github.com/chirag127/userscripts/raw/main/scripts/youtube-copy-context.user.js)
 
 Requires Tampermonkey, Violentmonkey, or Userscripts (Safari).
 

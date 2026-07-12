@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         YouTube — Nav shortcuts (next + previous)
-// @namespace    https://github.com/chirag127/userscripts-script
+// @namespace    https://github.com/chirag127/userscripts
 // @version      0.1.3
 // @description  Combined: press N to jump to the next video, P to the previous. Both keys are remappable via the Tampermonkey menu.
 // @author       chirag127
@@ -11,10 +11,10 @@
 // @grant        GM_setValue
 // @grant        GM_registerMenuCommand
 // @license      MIT
-// @homepageURL  https://github.com/chirag127/userscripts-script/blob/main/scripts/youtube-nav-shortcuts.user.js
-// @supportURL   https://github.com/chirag127/userscripts-script/issues
-// @updateURL    https://raw.githubusercontent.com/chirag127/userscripts-script/main/scripts/youtube-nav-shortcuts.user.js
-// @downloadURL  https://raw.githubusercontent.com/chirag127/userscripts-script/main/scripts/youtube-nav-shortcuts.user.js
+// @homepageURL  https://github.com/chirag127/userscripts/blob/main/scripts/youtube-nav-shortcuts.user.js
+// @supportURL   https://github.com/chirag127/userscripts/issues
+// @updateURL    https://raw.githubusercontent.com/chirag127/userscripts/main/scripts/youtube-nav-shortcuts.user.js
+// @downloadURL  https://raw.githubusercontent.com/chirag127/userscripts/main/scripts/youtube-nav-shortcuts.user.js
 // ==/UserScript==
 
 /*
@@ -33,7 +33,7 @@ Both keys are remappable via the userscript menu.
 
 ## Install
 
-[![Install](https://img.shields.io/badge/install-userscript-blue)](https://github.com/chirag127/userscripts-script/raw/main/scripts/youtube-nav-shortcuts.user.js)
+[![Install](https://img.shields.io/badge/install-userscript-blue)](https://github.com/chirag127/userscripts/raw/main/scripts/youtube-nav-shortcuts.user.js)
 
 Requires Tampermonkey, Violentmonkey, or Userscripts (Safari).
 

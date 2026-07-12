@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Copy highlighted links
-// @namespace    https://github.com/chirag127/userscripts-script
+// @namespace    https://github.com/chirag127/userscripts
 // @version      0.1.3
 // @description  Copy URLs of every link found in the current text selection to the clipboard (one per line). Tampermonkey menu command — same behavior as the "Copy Highlighted Links" Chrome extension by CraftedIntuition, plus plain-text URL detection.
 // @author       chirag127
@@ -9,10 +9,10 @@
 // @grant        GM_registerMenuCommand
 // @grant        GM_setClipboard
 // @license      MIT
-// @homepageURL  https://github.com/chirag127/userscripts-script/blob/main/scripts/copy-highlighted-links.user.js
-// @supportURL   https://github.com/chirag127/userscripts-script/issues
-// @updateURL    https://raw.githubusercontent.com/chirag127/userscripts-script/main/scripts/copy-highlighted-links.user.js
-// @downloadURL  https://raw.githubusercontent.com/chirag127/userscripts-script/main/scripts/copy-highlighted-links.user.js
+// @homepageURL  https://github.com/chirag127/userscripts/blob/main/scripts/copy-highlighted-links.user.js
+// @supportURL   https://github.com/chirag127/userscripts/issues
+// @updateURL    https://raw.githubusercontent.com/chirag127/userscripts/main/scripts/copy-highlighted-links.user.js
+// @downloadURL  https://raw.githubusercontent.com/chirag127/userscripts/main/scripts/copy-highlighted-links.user.js
 // ==/UserScript==
 
 /*
@@ -20,7 +20,7 @@ README (folded from copy-highlighted-links/README.md during flat-restructure 202
 
 # copy-highlighted-links
 
-[⭐ Star this Repo ⭐](https://github.com/chirag127/userscripts-script)
+[⭐ Star this Repo ⭐](https://github.com/chirag127/userscripts)
 
 Select any text on a page that contains links → trigger the Tampermonkey menu → every URL in the selection is copied to your clipboard, one per line.
 
@@ -28,7 +28,7 @@ Select any text on a page that contains links → trigger the Tampermonkey menu 
 
 ## Install
 
-[Click here to install in Tampermonkey / Violentmonkey / ScriptCat](https://raw.githubusercontent.com/chirag127/userscripts-script/main/scripts/copy-highlighted-links.user.js)
+[Click here to install in Tampermonkey / Violentmonkey / ScriptCat](https://raw.githubusercontent.com/chirag127/userscripts/main/scripts/copy-highlighted-links.user.js)
 
 Auto-updates on every push via the `@updateURL` metadata.
 

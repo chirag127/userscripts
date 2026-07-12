@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         AI chat — Auto-continue truncated responses
-// @namespace    https://github.com/chirag127/userscripts-script
+// @namespace    https://github.com/chirag127/userscripts
 // @version      0.1.0
 // @description  Auto-clicks the "Continue" button on ChatGPT / Claude / Gemini when a response is cut off by output-token limits, so long generations complete unattended.
 // @author       chirag127
@@ -13,10 +13,10 @@
 // @grant        GM_setValue
 // @grant        GM_getValue
 // @license      MIT
-// @homepageURL  https://github.com/chirag127/userscripts-script/blob/main/scripts/ai-chat-auto-continue.user.js
-// @supportURL   https://github.com/chirag127/userscripts-script/issues
-// @updateURL    https://raw.githubusercontent.com/chirag127/userscripts-script/main/scripts/ai-chat-auto-continue.user.js
-// @downloadURL  https://raw.githubusercontent.com/chirag127/userscripts-script/main/scripts/ai-chat-auto-continue.user.js
+// @homepageURL  https://github.com/chirag127/userscripts/blob/main/scripts/ai-chat-auto-continue.user.js
+// @supportURL   https://github.com/chirag127/userscripts/issues
+// @updateURL    https://raw.githubusercontent.com/chirag127/userscripts/main/scripts/ai-chat-auto-continue.user.js
+// @downloadURL  https://raw.githubusercontent.com/chirag127/userscripts/main/scripts/ai-chat-auto-continue.user.js
 // ==/UserScript==
 
 /*
@@ -41,7 +41,7 @@ Text-based matching (not CSS selectors) survives class-name churn across UI rede
 ## Install
 
 1. Install [Tampermonkey](https://www.tampermonkey.net/) (or Violentmonkey / ScriptCat).
-2. Click → **[install](https://github.com/chirag127/userscripts-script/raw/main/scripts/ai-chat-auto-continue.user.js)**
+2. Click → **[install](https://github.com/chirag127/userscripts/raw/main/scripts/ai-chat-auto-continue.user.js)**
 
 ## Toggle per-site
 

@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         SERP — Toggle site:reddit.com button
-// @namespace    https://github.com/chirag127/userscripts-script
+// @namespace    https://github.com/chirag127/userscripts
 // @version      0.1.0
 // @description  One-click button to add/remove `site:reddit.com` from the current search query on Google, DuckDuckGo, and Bing. For when you want real answers, not SEO chum.
 // @author       chirag127
@@ -10,10 +10,10 @@
 // @run-at       document-end
 // @grant        GM_registerMenuCommand
 // @license      MIT
-// @homepageURL  https://github.com/chirag127/userscripts-script/blob/main/scripts/search-reddit-button.user.js
-// @supportURL   https://github.com/chirag127/userscripts-script/issues
-// @updateURL    https://raw.githubusercontent.com/chirag127/userscripts-script/main/scripts/search-reddit-button.user.js
-// @downloadURL  https://raw.githubusercontent.com/chirag127/userscripts-script/main/scripts/search-reddit-button.user.js
+// @homepageURL  https://github.com/chirag127/userscripts/blob/main/scripts/search-reddit-button.user.js
+// @supportURL   https://github.com/chirag127/userscripts/issues
+// @updateURL    https://raw.githubusercontent.com/chirag127/userscripts/main/scripts/search-reddit-button.user.js
+// @downloadURL  https://raw.githubusercontent.com/chirag127/userscripts/main/scripts/search-reddit-button.user.js
 // ==/UserScript==
 
 /*
@@ -32,7 +32,7 @@ Userscript that adds a floating **`+ reddit`** / **`− reddit`** button to sear
 ## Install
 
 1. Install [Tampermonkey](https://www.tampermonkey.net/) (or Violentmonkey / ScriptCat).
-2. Click → **[install](https://github.com/chirag127/userscripts-script/raw/main/scripts/search-reddit-button.user.js)**
+2. Click → **[install](https://github.com/chirag127/userscripts/raw/main/scripts/search-reddit-button.user.js)**
 
 ## Use
 

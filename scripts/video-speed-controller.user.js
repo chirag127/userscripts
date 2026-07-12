@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Video Speed Controller
-// @namespace    https://github.com/chirag127/userscripts-script
+// @namespace    https://github.com/chirag127/userscripts
 // @version      0.1.0
 // @description  Control playback speed of any HTML5 <video>/<audio> with keyboard shortcuts (S slower, D faster, R reset, Z rewind 5s, X advance 5s) plus a draggable on-video speed overlay. Replaces the "Video Speed Controller" Chrome extension.
 // @author       chirag127
@@ -10,10 +10,10 @@
 // @grant        GM_getValue
 // @grant        GM_setValue
 // @license      MIT
-// @homepageURL  https://github.com/chirag127/userscripts-script/blob/main/scripts/video-speed-controller.user.js
-// @supportURL   https://github.com/chirag127/userscripts-script/issues
-// @updateURL    https://raw.githubusercontent.com/chirag127/userscripts-script/main/scripts/video-speed-controller.user.js
-// @downloadURL  https://raw.githubusercontent.com/chirag127/userscripts-script/main/scripts/video-speed-controller.user.js
+// @homepageURL  https://github.com/chirag127/userscripts/blob/main/scripts/video-speed-controller.user.js
+// @supportURL   https://github.com/chirag127/userscripts/issues
+// @updateURL    https://raw.githubusercontent.com/chirag127/userscripts/main/scripts/video-speed-controller.user.js
+// @downloadURL  https://raw.githubusercontent.com/chirag127/userscripts/main/scripts/video-speed-controller.user.js
 // ==/UserScript==
 
 /*

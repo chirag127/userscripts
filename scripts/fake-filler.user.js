@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Fake Filler
-// @namespace    https://github.com/chirag127/userscripts-script
+// @namespace    https://github.com/chirag127/userscripts
 // @version      0.1.0
 // @description  Fill every form input/textarea/select on the page with realistic dummy data via a hotkey (Ctrl+Shift+F) or the userscript menu. Replaces the "Fake Filler" Chrome extension for quick form testing.
 // @author       chirag127
@@ -8,10 +8,10 @@
 // @run-at       document-idle
 // @grant        GM_registerMenuCommand
 // @license      MIT
-// @homepageURL  https://github.com/chirag127/userscripts-script/blob/main/scripts/fake-filler.user.js
-// @supportURL   https://github.com/chirag127/userscripts-script/issues
-// @updateURL    https://raw.githubusercontent.com/chirag127/userscripts-script/main/scripts/fake-filler.user.js
-// @downloadURL  https://raw.githubusercontent.com/chirag127/userscripts-script/main/scripts/fake-filler.user.js
+// @homepageURL  https://github.com/chirag127/userscripts/blob/main/scripts/fake-filler.user.js
+// @supportURL   https://github.com/chirag127/userscripts/issues
+// @updateURL    https://raw.githubusercontent.com/chirag127/userscripts/main/scripts/fake-filler.user.js
+// @downloadURL  https://raw.githubusercontent.com/chirag127/userscripts/main/scripts/fake-filler.user.js
 // ==/UserScript==
 
 /*
@@ -234,7 +234,7 @@ MIT.
 		toast(`Fake Filler: filled ${n} field${n === 1 ? "" : "s"}`);
 	}
 
-	function _typing(el) {
+	function typing(el) {
 		return (
 			el &&
 			(el.isContentEditable || /^(INPUT|TEXTAREA|SELECT)$/.test(el.tagName))

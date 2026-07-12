@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         StereoToMono
-// @namespace    https://github.com/chirag127/userscripts-script
+// @namespace    https://github.com/chirag127/userscripts
 // @version      1.1.2
 // @description  Convert stereo audio to mono on any page. Auto-detects playing <video> and <audio> elements. Toggle via Tampermonkey menu.
 // @author       chirag127
@@ -8,10 +8,10 @@
 // @exclude      https://www.youtube.com/embed/*
 // @grant        GM_registerMenuCommand
 // @license      MIT
-// @homepageURL  https://github.com/chirag127/userscripts-script/blob/main/scripts/stereo-to-mono.user.js
-// @supportURL   https://github.com/chirag127/userscripts-script/issues
-// @updateURL    https://raw.githubusercontent.com/chirag127/userscripts-script/main/scripts/stereo-to-mono.user.js
-// @downloadURL  https://raw.githubusercontent.com/chirag127/userscripts-script/main/scripts/stereo-to-mono.user.js
+// @homepageURL  https://github.com/chirag127/userscripts/blob/main/scripts/stereo-to-mono.user.js
+// @supportURL   https://github.com/chirag127/userscripts/issues
+// @updateURL    https://raw.githubusercontent.com/chirag127/userscripts/main/scripts/stereo-to-mono.user.js
+// @downloadURL  https://raw.githubusercontent.com/chirag127/userscripts/main/scripts/stereo-to-mono.user.js
 // ==/UserScript==
 
 /*
@@ -24,7 +24,7 @@ Userscript that **converts stereo audio to mono** on any page. Works with `<vide
 ## Install
 
 1. Install a userscript manager: [Tampermonkey](https://www.tampermonkey.net/), [Violentmonkey](https://violentmonkey.github.io/), or [ScriptCat](https://scriptcat.org/).
-2. Click → **[install](https://raw.githubusercontent.com/chirag127/userscripts-script/main/scripts/stereo-to-mono.user.js)**
+2. Click → **[install](https://raw.githubusercontent.com/chirag127/userscripts/main/scripts/stereo-to-mono.user.js)**
 
 ## How it works
 

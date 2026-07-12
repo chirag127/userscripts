@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Restore right-click + selection + hotkeys
-// @namespace    https://github.com/chirag127/userscripts-script
+// @namespace    https://github.com/chirag127/userscripts
 // @version      0.1.0
 // @description  Neutralises pages that block right-click, text selection, copy/cut, drag, and keyboard shortcuts. Stops the hijack at document-start before the host page's handlers register.
 // @author       chirag127
@@ -10,10 +10,10 @@
 // @grant        GM_getValue
 // @grant        GM_setValue
 // @license      MIT
-// @homepageURL  https://github.com/chirag127/userscripts-script/blob/main/scripts/anti-hijack-guard.user.js
-// @supportURL   https://github.com/chirag127/userscripts-script/issues
-// @updateURL    https://raw.githubusercontent.com/chirag127/userscripts-script/main/scripts/anti-hijack-guard.user.js
-// @downloadURL  https://raw.githubusercontent.com/chirag127/userscripts-script/main/scripts/anti-hijack-guard.user.js
+// @homepageURL  https://github.com/chirag127/userscripts/blob/main/scripts/anti-hijack-guard.user.js
+// @supportURL   https://github.com/chirag127/userscripts/issues
+// @updateURL    https://raw.githubusercontent.com/chirag127/userscripts/main/scripts/anti-hijack-guard.user.js
+// @downloadURL  https://raw.githubusercontent.com/chirag127/userscripts/main/scripts/anti-hijack-guard.user.js
 // ==/UserScript==
 
 /*
@@ -21,13 +21,13 @@ README (folded from anti-hijack-guard/README.md during flat-restructure 2026-07-
 
 # anti-hijack-guard
 
-[⭐ Star this Repo ⭐](https://github.com/chirag127/userscripts-script)
+[⭐ Star this Repo ⭐](https://github.com/chirag127/userscripts)
 
 Restores right-click, text selection, copy/cut, drag, and keyboard shortcuts on pages that block them.
 
 ## Install
 
-[Click here to install in Tampermonkey / Violentmonkey / ScriptCat](https://raw.githubusercontent.com/chirag127/userscripts-script/main/scripts/anti-hijack-guard.user.js)
+[Click here to install in Tampermonkey / Violentmonkey / ScriptCat](https://raw.githubusercontent.com/chirag127/userscripts/main/scripts/anti-hijack-guard.user.js)
 
 Auto-updates on every push via `@updateURL`.
 

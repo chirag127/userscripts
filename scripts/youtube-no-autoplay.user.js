@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         YouTube — No autoplay + no end cards
-// @namespace    https://github.com/chirag127/userscripts-script
+// @namespace    https://github.com/chirag127/userscripts
 // @version      0.1.0
 // @description  Kills autoplay, hides end-card overlays, and auto-dismisses the "Video paused. Continue watching?" modal. Stops YouTube from stealing your next hour.
 // @author       chirag127
@@ -12,10 +12,10 @@
 // @grant        GM_setValue
 // @grant        GM_registerMenuCommand
 // @license      MIT
-// @homepageURL  https://github.com/chirag127/userscripts-script/blob/main/scripts/youtube-no-autoplay.user.js
-// @supportURL   https://github.com/chirag127/userscripts-script/issues
-// @updateURL    https://raw.githubusercontent.com/chirag127/userscripts-script/main/scripts/youtube-no-autoplay.user.js
-// @downloadURL  https://raw.githubusercontent.com/chirag127/userscripts-script/main/scripts/youtube-no-autoplay.user.js
+// @homepageURL  https://github.com/chirag127/userscripts/blob/main/scripts/youtube-no-autoplay.user.js
+// @supportURL   https://github.com/chirag127/userscripts/issues
+// @updateURL    https://raw.githubusercontent.com/chirag127/userscripts/main/scripts/youtube-no-autoplay.user.js
+// @downloadURL  https://raw.githubusercontent.com/chirag127/userscripts/main/scripts/youtube-no-autoplay.user.js
 // ==/UserScript==
 
 /*
@@ -33,7 +33,7 @@ Stops YouTube from queuing the next video on you. Three things in one script:
 
 ## Install
 
-[![Install](https://img.shields.io/badge/install-userscript-blue)](https://github.com/chirag127/userscripts-script/raw/main/scripts/youtube-no-autoplay.user.js)
+[![Install](https://img.shields.io/badge/install-userscript-blue)](https://github.com/chirag127/userscripts/raw/main/scripts/youtube-no-autoplay.user.js)
 
 Requires Tampermonkey, Violentmonkey, or Userscripts (Safari).
 
