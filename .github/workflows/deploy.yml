@@ -22,6 +22,10 @@ jobs:
         with:
           node-version: '22'
 
+      - uses: pnpm/action-setup@v6
+        with:
+          version: 10.34.3
+
       - name: Validate userscript metadata
         run: node scripts/validate-userscripts.mjs
 
