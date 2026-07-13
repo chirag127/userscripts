@@ -34,4 +34,4 @@ Auto-updates on every push via the `@updateURL` metadata.
 
 ## License
 
-MIT. See [LICENSE](../LICENSE).
+MIT. See [LICENSE](../../LICENSE).

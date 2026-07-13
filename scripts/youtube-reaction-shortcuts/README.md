@@ -31,9 +31,8 @@ Five-selector fallback chain for each button covers modern + legacy YouTube rend
 
 ## Atomic alternatives
 
-If you only want one of the two keys, install the atomic variants instead:
+If you only want one of the two keys, install the atomic variant instead:
 
-- [`youtube-like-shortcut`](../youtube-like-shortcut/)
 - [`youtube-dislike-shortcut`](../youtube-dislike-shortcut/)
 
 ## License

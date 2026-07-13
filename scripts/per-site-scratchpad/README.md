@@ -34,4 +34,4 @@ Storage keys (visible in Tampermonkey → Storage tab):
 
 ## License
 
-MIT. See [LICENSE](../LICENSE).
+MIT. See [LICENSE](../../LICENSE).

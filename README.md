@@ -1,6 +1,6 @@
 # userscripts
 
-[![GitHub stars](https://img.shields.io/github/stars/chirag127/userscripts?style=social)](https://github.com/chirag127/userscripts/stargazers)
+[![GitHub stars](https://img.shields.io/github/stars/chirag127/userscripts?style=social)](https://github.com/chirag127/userscripts)
 
 Personal userscripts collection by [@chirag127](https://github.com/chirag127). Tampermonkey / ScriptCat / Violentmonkey compatible.
 

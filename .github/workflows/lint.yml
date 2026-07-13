@@ -14,20 +14,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v6
+        with:
+          version: 10.34.3
       - uses: actions/setup-node@v4
         with:
-          node-version: '20'
-      - name: Syntax-check *.user.js
-        shell: bash
-        run: |
-          set -e
-          fail=0
-          shopt -s globstar nullglob
-          for f in **/*.user.js; do
-            echo "checking $f"
-            node --check "$f" || { echo "SYNTAX FAIL: $f"; fail=1; }
-          done
-          exit $fail
+          node-version: '22'
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm run lint
 
   readme-link-check:
     runs-on: ubuntu-latest

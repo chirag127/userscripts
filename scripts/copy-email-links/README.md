@@ -56,4 +56,4 @@ The script reads `<a href="mailto:…">` hrefs in pages you visit; nothing leave
 
 ## License
 
-MIT. See [LICENSE](../LICENSE).
+MIT. See [LICENSE](../../LICENSE).

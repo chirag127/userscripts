@@ -80,4 +80,4 @@ The script reads the current page's DOM (anchors + images) and writes the result
 
 ## License
 
-MIT. See [LICENSE](../LICENSE).
+MIT. See [LICENSE](../../LICENSE).

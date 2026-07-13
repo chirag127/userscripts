@@ -30,4 +30,4 @@ Open the Tampermonkey/Violentmonkey/ScriptCat menu (puzzle-piece icon → this s
 
 ## License
 
-MIT. See [LICENSE](../LICENSE).
+MIT. See [LICENSE](../../LICENSE).

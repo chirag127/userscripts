@@ -41,4 +41,4 @@ Tampermonkey/Violentmonkey/ScriptCat menu (puzzle-piece → this script name):
 
 ## License
 
-MIT. See [LICENSE](../LICENSE).
+MIT. See [LICENSE](../../LICENSE).

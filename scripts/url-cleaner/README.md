@@ -36,4 +36,4 @@ Tampermonkey menu (puzzle-piece icon → this script's name):
 
 ## License
 
-MIT. See [LICENSE](../LICENSE).
+MIT. See [LICENSE](../../LICENSE).

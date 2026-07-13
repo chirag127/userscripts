@@ -57,4 +57,4 @@ The script reads `<a href>` elements and rendered text inside your current page'
 
 ## License
 
-MIT. See [LICENSE](../LICENSE).
+MIT. See [LICENSE](../../LICENSE).
