@@ -1,8 +1,11 @@
 # userscripts
 
 [![GitHub stars](https://img.shields.io/github/stars/chirag127/userscripts?style=social)](https://github.com/chirag127/userscripts)
+[![License: MIT](https://img.shields.io/github/license/chirag127/userscripts?style=flat-square)](./LICENSE)
 
 Personal userscripts collection by [@chirag127](https://github.com/chirag127). Tampermonkey / ScriptCat / Violentmonkey compatible.
+
+**Live catalog: [userscripts.oriz.in](https://userscripts.oriz.in)** — searchable install index.
 
 Each script lives in its own folder under [`scripts/`](./scripts/) as `scripts/<name>/<name>.user.js` with a dedicated `README.md`.
 
