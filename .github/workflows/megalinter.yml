@@ -8,7 +8,6 @@ on:
 
 permissions:
   contents: write
-  workflows: write
   pull-requests: write
   issues: write
   security-events: write
@@ -45,6 +44,7 @@ jobs:
           commit_message: "ci: apply MegaLinter auto-fixes"
           commit_user_name: megalinter-bot
           commit_user_email: 129584137+megalinter-bot@users.noreply.github.com
+          file_pattern: "!.github/workflows/**"
 
       - name: Upload MegaLinter reports
         if: always()
