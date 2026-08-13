@@ -1,15 +1,113 @@
 # userscripts
 
-[![GitHub stars](https://img.shields.io/github/stars/chirag127/userscripts?style=social)](https://github.com/chirag127/userscripts)
+> A curated collection of small, single-purpose browser userscripts — with a searchable install catalog.
+
 [![License: MIT](https://img.shields.io/github/license/chirag127/userscripts?style=flat-square)](./LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/chirag127/userscripts?style=flat-square)](https://github.com/chirag127/userscripts/stargazers)
+[![Last commit](https://img.shields.io/github/last-commit/chirag127/userscripts?style=flat-square)](https://github.com/chirag127/userscripts/commits/main)
+[![JavaScript](https://img.shields.io/badge/JavaScript-userscripts-f7df1e?style=flat-square)](https://github.com/chirag127/userscripts)
+[![Deploy](https://img.shields.io/github/actions/workflow/status/chirag127/userscripts/deploy.yml?style=flat-square&label=deploy)](https://github.com/chirag127/userscripts/actions/workflows/deploy.yml)
+
+## What it is / why it exists
+
+Browser extensions are heavy, permission-hungry, and often do one thing you could do with 30 lines of JS. This repo is a growing library of **atomic userscripts** — each does exactly one thing (skip Shorts, strip tracking params, restore right-click, add code-copy buttons, YouTube keyboard shortcuts, …) — plus an auto-generated, searchable **install catalog** so you can find and one-click-install any of them. Everything runs client-side in Tampermonkey / Violentmonkey / ScriptCat; nothing phones home.
+
+## Links
+
+- **Live catalog:** [userscripts.oriz.in](https://userscripts.oriz.in) — searchable install index (Cloudflare Pages)
+- **Repo:** https://github.com/chirag127/userscripts
+- Each script lives in [`scripts/<name>/<name>.user.js`](./scripts/) with its own `README.md`
+
+⭐ **If this is useful, please star the repo — it helps others find it.**
+
+## How it works
+
+```mermaid
+flowchart LR
+    A[scripts/<name>/<name>.user.js] --> V[validate-userscripts.mjs<br/>metadata checks]
+    V --> B[build-catalog.mjs]
+    B --> C[dist/ static catalog]
+    C --> D[Cloudflare Pages<br/>userscripts.oriz.in]
+    D --> E[Click install]
+    E --> F[raw.githubusercontent.com/.../*.user.js]
+    F --> G[Tampermonkey / Violentmonkey<br/>installs + auto-updates]
+```
+
+## Features
+
+- **Atomic scripts** — one behavior per file; compose the ones you want
+- **Searchable catalog** — the live site indexes every script's name, target site, and description
+- **One-click install** — each catalog entry links to the raw `.user.js`; your manager auto-updates from `main`
+- **Metadata validation** — `validate-userscripts.mjs` enforces well-formed `==UserScript==` headers before deploy
+- **Auto-generated README table** — the catalog below is built, not hand-maintained
+- **Zero tracking** — pure client-side scripts, no analytics
+
+## Tech stack
+
+- **Vanilla JavaScript** userscripts (Tampermonkey / Violentmonkey / ScriptCat metadata format)
+- **Node.js** build scripts (ESM), **pnpm** package manager
+- **Cloudflare Pages** hosting (`wrangler`, output dir `dist/`), custom domain `userscripts.oriz.in`
+- **GitHub Actions** for validate → build → deploy
+
+## Repo structure
+
+```
+scripts/
+├── <name>/
+│   ├── <name>.user.js          # the userscript itself
+│   └── README.md               # per-script docs
+├── build-catalog.mjs           # generates the catalog site + README table into dist/
+└── validate-userscripts.mjs    # metadata header validation
+wrangler.toml                   # Cloudflare Pages config (pages_build_output_dir = dist)
+package.json                    # scripts: validate, build, lint
+```
+
+## Install a userscript
+
+1. Install a userscript manager: [Tampermonkey](https://www.tampermonkey.net/) or [Violentmonkey](https://violentmonkey.github.io/)
+2. Open [userscripts.oriz.in](https://userscripts.oriz.in) (or the table below) and click **install** next to any script
+3. Your manager prompts to install and will auto-update it from this repo
+
+## Build / deploy (for contributors)
+
+```bash
+pnpm install
+pnpm run validate     # checks every userscript's metadata header
+pnpm run build        # builds the catalog site into dist/
+pnpm run lint         # validate + syntax-check the build script
+```
+
+Pushing to `main` runs `.github/workflows/deploy.yml`, which validates, builds the catalog, and deploys `dist/` to Cloudflare Pages.
+
+## Part of the oriz family
+
+One of ~80 small, single-purpose products in the **oriz** family. See the rest at [blog.oriz.in](https://blog.oriz.in).
+
+## Cost
+
+Hosting is **$0 on the Cloudflare Pages free tier**. The scripts themselves are free and run locally in your browser.
+
+## Contributing
+
+Add a folder under `scripts/<name>/` with a `<name>.user.js` (valid `==UserScript==` header) and a `README.md`. Run `pnpm run validate` before opening a PR — the catalog and this table regenerate automatically on deploy.
+
+## Status / roadmap
+
+**Stable and growing.** New atomic scripts are added regularly. Conventional commits are the changelog — see [the commit history](https://github.com/chirag127/userscripts/commits/main).
+
+## License
+
+MIT — see [`LICENSE`](./LICENSE).
+
+## Author
+
+Chirag Singhal · [chirag@oriz.in](mailto:chirag@oriz.in)
+
+---
+
+## Catalog
 
 Personal userscripts collection by [@chirag127](https://github.com/chirag127). Tampermonkey / ScriptCat / Violentmonkey compatible.
-
-**Live catalog: [userscripts.oriz.in](https://userscripts.oriz.in)** — searchable install index.
-
-Each script lives in its own folder under [`scripts/`](./scripts/) as `scripts/<name>/<name>.user.js` with a dedicated `README.md`.
-
-## Install
 
 Click **install** next to any userscript below, or open its folder for full docs. Your userscript manager will prompt to install and auto-update from this repo.
 
@@ -46,7 +144,3 @@ Click **install** next to any userscript below, or open its folder for full docs
 | **[YouTube — No autoplay + no end cards](./scripts/youtube-no-autoplay/)** | youtube.com | Kills autoplay, hides end-card overlays, and auto-dismisses the "Video paused. Continue watching?" modal. Stops YouTube from stealing your next hour. | [install](https://raw.githubusercontent.com/chirag127/userscripts/main/scripts/youtube-no-autoplay/youtube-no-autoplay.user.js) |
 | **[YouTube — Previous video (P)](./scripts/youtube-prev-video-shortcut/)** | youtube.com | Press P to jump to the previous video. Atomic — does one thing only. | [install](https://raw.githubusercontent.com/chirag127/userscripts/main/scripts/youtube-prev-video-shortcut/youtube-prev-video-shortcut.user.js) |
 | **[YouTube — Reaction shortcuts (like + dislike)](./scripts/youtube-reaction-shortcuts/)** | youtube.com | Combined: press S to like, D to dislike the current video. Both keys are remappable via the Tampermonkey menu. | [install](https://raw.githubusercontent.com/chirag127/userscripts/main/scripts/youtube-reaction-shortcuts/youtube-reaction-shortcuts.user.js) |
-
-## License
-
-MIT. See [LICENSE](./LICENSE).
