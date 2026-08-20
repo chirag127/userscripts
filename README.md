@@ -3,7 +3,7 @@
 > A curated collection of small, single-purpose browser userscripts — with a searchable install catalog.
 
 [![License: MIT](https://img.shields.io/github/license/chirag127/userscripts?style=flat-square)](./LICENSE)
-[![GitHub stars](https://img.shields.io/github/stars/chirag127/userscripts?style=flat-square)](https://github.com/chirag127/userscripts/stargazers)
+[![GitHub stars](https://img.shields.io/github/stars/chirag127/userscripts?style=flat-square)](https://github.com/chirag127/userscripts)
 [![Last commit](https://img.shields.io/github/last-commit/chirag127/userscripts?style=flat-square)](https://github.com/chirag127/userscripts/commits/main)
 [![JavaScript](https://img.shields.io/badge/JavaScript-userscripts-f7df1e?style=flat-square)](https://github.com/chirag127/userscripts)
 [![Deploy](https://img.shields.io/github/actions/workflow/status/chirag127/userscripts/deploy.yml?style=flat-square&label=deploy)](https://github.com/chirag127/userscripts/actions/workflows/deploy.yml)
