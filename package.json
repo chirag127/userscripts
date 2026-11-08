@@ -10,6 +10,10 @@
 	"scripts": {
 		"validate": "node scripts/validate-userscripts.mjs",
 		"build": "node scripts/build-catalog.mjs",
-		"lint": "node scripts/validate-userscripts.mjs && node --check scripts/build-catalog.mjs"
+		"test": "node --test tests/",
+		"lint": "node scripts/validate-userscripts.mjs && node --test tests/ && node --check scripts/build-catalog.mjs"
+	},
+	"devDependencies": {
+		"jsdom": "^27.4.0"
 	}
 }

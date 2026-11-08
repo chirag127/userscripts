@@ -1,0 +1,9 @@
+[submodule "fork/OmniRoute"]
+	path = fork/OmniRoute
+	url = https://github.com/chirag127/OmniRoute-1.git
+[submodule "fork/Turnstile-Slip"]
+	path = fork/Turnstile-Slip
+	url = https://github.com/chirag127/Turnstile-Slip.git
+[submodule "fork/Turnstile-Solver"]
+	path = fork/Turnstile-Solver
+	url = https://github.com/chirag127/Turnstile-Solver.git

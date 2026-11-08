@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Turnstile fixture</title>
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+  </head>
+  <body>
+    <h1>Turnstile force-interactive</h1>
+    <form onsubmit="event.preventDefault(); document.getElementById('out').textContent = 'submitted'">
+      <div class="cf-turnstile" data-sitekey="3x00000000000000000000FF" data-theme="light"></div>
+      <input type="hidden" name="cf-turnstile-response" />
+      <button type="submit">Submit</button>
+    </form>
+    <p id="out"></p>
+    <script>
+      const out = document.getElementById('out')
+      const poll = setInterval(() => {
+        const v = document.querySelector('input[name="cf-turnstile-response"]')?.value
+        if (v) {
+          clearInterval(poll)
+          out.textContent = 'TOKEN:' + v.slice(0, 12)
+        }
+      }, 300)
+    </script>
+  </body>
+</html>
